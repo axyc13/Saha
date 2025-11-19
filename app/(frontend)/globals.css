@@ -3,4 +3,15 @@
 
 body {
   background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--font-robotoserif);
+  font-weight: 500;
+}
+
+* {
+  font-family: var(--font-inter)
 }

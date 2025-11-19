@@ -4,6 +4,7 @@ import Hero from '@/app/components/home/Hero'
 import AboutUs from '@/app/components/home/AboutUs'
 import Services from '@/app/components/home/Services'
 import Insights from '@/app/components/home/Insights'
+import './globals.css'
 
 export default async function HomePage() {
 
