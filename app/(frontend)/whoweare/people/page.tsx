@@ -1,9 +1,8 @@
 import Header from "@/app/components/common/Header";
 import Footer from "@/app/components/common/Footer";
-import Hero from "@/app/components/services/Hero";
-import "../globals.css";
+import Hero from "@/app/components/people/Hero";
 
-export default async function ServicesPage() {
+export default async function WhoWeArePage() {
   return (
     <div>
       <Header />

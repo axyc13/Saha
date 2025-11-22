@@ -24,7 +24,7 @@ export default function WhoWeAreExtended() {
             <h2 className="text-xl">Overview</h2>
           </Link>
           <Link
-            href="/whoweare"
+            href="/whoweare/governance"
             className="border-b p-5 hover:bg-white hover:text-black"
           >
             <h2 className="text-xl">Governance</h2>
@@ -36,7 +36,7 @@ export default function WhoWeAreExtended() {
             <h2 className="text-xl">Our Values</h2>
           </Link>
           <Link
-            href="/whoweare"
+            href="/whoweare/people"
             className="border-b p-5 hover:bg-white hover:text-black"
           >
             <h2 className="text-xl">Our People</h2>
