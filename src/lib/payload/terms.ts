@@ -6,5 +6,6 @@ export async function getTerms() {
     }
   );
 
-  return res.json();
+  const data = await res.json();
+  return data.docs;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { getTerms } from "../../lib/payload/terms";
+import { getTerms } from "src/lib/payload/terms";
 import type { Term } from "src/types/Terms";
 
 export default async function Contact() {
@@ -9,8 +9,9 @@ export default async function Contact() {
     <section className="w-screen text-black px-30 justify-between py-10">
       <div className="flex flex-col gap-10">
         {sections.map((sec) => (
-          <div key={sec.id}>
+          <div key={sec.id} className="px-15">
             <h1 className="text-3xl">{sec.title}</h1>
+            <br />
             <p className="text-md whitespace-pre-line">{sec.body}</p>
           </div>
         ))}
