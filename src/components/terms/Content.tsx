@@ -1,6 +1,6 @@
 import React from "react";
 import { getTerms } from "src/lib/payload/terms";
-import type { Term } from "src/types/Terms";
+import type { Term } from "@/src/types/term";
 
 export default async function Contact() {
   const sections: Term[] = await getTerms();
