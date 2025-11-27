@@ -4,8 +4,8 @@ import placeholder from "@/public/placeholder.jpg";
 
 export default function Hero() {
   return (
-    <section className="w-screen h-[64vh] text-white text-shadow-lg">
-      <div className="relative w-full h-[56vh] flex items-baseline-last py-16">
+    <section className="w-screen h-[72vh] text-white text-shadow-lg">
+      <div className="relative w-full h-[64vh] flex items-baseline-last py-16">
         <Image
           src={placeholder}
           alt="Placeholder"
