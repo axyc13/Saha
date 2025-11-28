@@ -29,7 +29,7 @@ export default function AboutUs() {
             </p>
 
             <div className="z-20 flex flex-row gap-16">
-              <Link href="/whoweare">
+              <Link href="/whoweare/#values">
                 <button>Our Values</button>
               </Link>
               <Link href="/whoweare/governance">

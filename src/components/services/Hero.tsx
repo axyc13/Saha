@@ -4,8 +4,8 @@ import placeholder from "@/public/placeholder.jpg";
 
 export default function Hero() {
   return (
-    <section className="w-screen h-screen text-white text-shadow-lg">
-      <div className="relative w-full h-[56vh] flex items-center">
+    <section className="w-screen h-[72vh] text-white text-shadow-lg">
+      <div className="relative w-full h-[64vh] flex items-baseline-last py-16">
         <Image
           src={placeholder}
           alt="Placeholder"
@@ -15,12 +15,11 @@ export default function Hero() {
         <div className="flex flex-col gap-8 px-8 relative z-10 ">
           <h1 className="text-6xl">Our Services</h1>
           <p className="break-normal w-[80vw]">
-            Short sumamry of services , Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Mauris eu molestie felis, nec imperdiet metus.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu
-            molestie felis, nec imperdiet metus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Mauris eu molestie felis, nec imperdiet
-            metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Saha provides industry-focused services for public and private
+            clients. Our experienced staff, combined with our global network,
+            allow us to provide the support you need - wherever you need it. We
+            aim to provide trust through assurance and help you transform, grow
+            and operate.
           </p>
         </div>
       </div>

@@ -66,3 +66,8 @@ input {
   translate: 0, 5;
   pointer-events: none;
 }
+
+.payload-richtext ul.list-bullet {
+  list-style-type: disc !important;
+  margin-left: 1rem !important;
+}
