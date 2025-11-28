@@ -41,6 +41,16 @@ button:hover {
   border: 2px solid rgb(255, 255, 255);
 }
 
+input {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  border-radius: 45px;
+  padding: 10px 25px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
 * {
   font-family: var(--font-inter);
 }
