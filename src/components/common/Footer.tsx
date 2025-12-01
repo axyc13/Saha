@@ -12,20 +12,20 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="relative w-full h-112 text-white bg-black">
-      <div className="flex flex-row gap-24 items-center">
-        <div className="p-8">
+    <footer className="relative w-full h-92 lg:h-112 text-white bg-black flex flex-col justify-around">
+      <div className="flex flex-row gap-12 md:gap-16 lg:gap-32 justify-center md:justify-normal items-center ">
+        <div className="">
           <Image
             src={logo}
             alt="Saha logo"
-            className="rounded-full w-80 h-80"
+            className="rounded-full w-30 md:w-60 lg:w-80 h-30 md:h-60 lg:h-80"
           />
         </div>
 
-        <div className="flex flex-row gap-16">
+        <div className="flex flex-row gap-8 md:gap-12 lg:gap-16">
           <div>
-            <h2 className="text-3xl pb-8">Quick Links</h2>
-            <div className="flex flex-col gap-5">
+            <h2 className="text-xl lg:text-3xl pb-8">Quick Links</h2>
+            <div className="flex flex-col gap-5 text-sm md:text-md lg:text-[17px]">
               <Link href="/whoweare">About Saha</Link>
               <Link href="/whoweare/#values">Our Values</Link>
               <Link href="/whoweare/people">Our People</Link>
@@ -34,8 +34,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="text-3xl pb-8">Get Involved</h2>
-            <div className="flex flex-col gap-5">
+            <h2 className="text-xl lg:text-3xl pb-8">Get Involved</h2>
+            <div className="flex flex-col gap-5 text-sm md:text-md lg:text-[17px]">
               <Link href="/contactus">Contact Us</Link>
               <Link href="/careers">Careers</Link>
             </div>
@@ -43,24 +43,35 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-row gap-5 absolute right-16 bottom-24">
-        <HugeiconsIcon icon={Linkedin02Icon} className="w-8 h-8" />
-        <HugeiconsIcon icon={Facebook02Icon} className="w-8 h-8" />
-        <HugeiconsIcon icon={NewTwitterIcon} className="w-8 h-8" />
-        <HugeiconsIcon icon={InstagramIcon} className="w-8 h-8" />
+      <div className="grid grid-cols-2 md:flex flex-row gap-5 absolute right-22 md:right-16 bottom-24">
+        <HugeiconsIcon
+          icon={Linkedin02Icon}
+          className="w-6 md:w-8 h-6 md:h-8"
+        />
+        <HugeiconsIcon
+          icon={Facebook02Icon}
+          className="w-6 md:w-8 h-6 md:h-8"
+        />
+        <HugeiconsIcon
+          icon={NewTwitterIcon}
+          className="w-6 md:w-8 h-6 md:h-8"
+        />
+        <HugeiconsIcon icon={InstagramIcon} className="w-6 md:w- h-6 md:h-8" />
       </div>
 
       {/* Bottom Line */}
-      <div className="w-full grid grid-cols-3 items-center">
-        <div />
+      <div className="w-full lg:grid grid-cols-3  flex flex-row gap-8 justify-center">
+        <div className="hidden md:flex" />
         <div className="flex justify-center">
-          <p className="text-sm ">© 2025 saha. All Rights Reserved.</p>
+          <p className="text-[9px] lg:text-sm">
+            © 2025 saha. All Rights Reserved.
+          </p>
         </div>
-        <div className="flex justify-end gap-8 pr-16">
-          <Link href="/termsofuse" className="text-sm">
+        <div className="flex justify-end gap-8 pr-4 lg:pr-16">
+          <Link href="/termsofuse" className="text-[9px] lg:text-sm">
             Terms of Use
           </Link>
-          <Link href="/privacy" className="text-sm ">
+          <Link href="/privacy" className="text-[9px] lg:text-sm">
             Privacy
           </Link>
         </div>

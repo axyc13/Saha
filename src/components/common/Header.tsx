@@ -35,7 +35,7 @@ export default function Header() {
           </Link>
         </div>
         {/* Desktop Nav */}
-        <nav className="gap-16 flex-1 items-center sm:text-xs text md:text-sm hidden md:flex">
+        <nav className="md:gap-8 lg:gap-16 flex-1 items-center md:text-xs lg:text-sm hidden md:flex">
           <div
             className="flex items-center cursor-pointer"
             onClick={() => toggleOpen("whoweare")}
@@ -109,7 +109,7 @@ export default function Header() {
       </div>
       {/* MOBILE MENU DROPDOWN */}
       {mobileOpen && mobilePage === "menu" && (
-        <div className="md:hidden absolute left-0 top-full w-screen h-screen bg-black text-white px-8 py-4 gap-4 flex flex-col z-50">
+        <div className="md:hidden absolute left-0 top-full w-screen h-screen bg-black text-white px-8 py-4 gap-8 flex flex-col z-50">
           <div
             onClick={() => toggleOpen("whoweare")}
             className="flex flex-row items-center cursor-pointer"
