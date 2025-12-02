@@ -17,17 +17,19 @@ export default function Second({
   image: string;
 }) {
   return (
-    <div className="w-[40vw] h-[24vw] text-black flex items-center justify-center">
-      <div className="flex flex-row items-center gap-8">
-        <Image
-          src={image}
-          alt="placeholder"
-          width={288}
-          height={320}
-          className="object-cover drop-shadow-md w-24 h-28 sm:w-32 sm:h-36 md:w-48 md:h-56 lg:w-72 lg:h-80"
-        />
+    <div className="p-8 w-[72vw] lg:w-[40vw] h-[40vw] lg:h-[24vw] bg-white text-black flex items-center justify-center drop-shadow-xl">
+      <div className="flex flex-row items-center justify-center gap-4 lg:gap-8 w-full h-full">
+        <div>
+          <Image
+            src={image}
+            alt="placeholder"
+            width={288}
+            height={320}
+            className="object-cover w-auto h-auto sm:w-32 sm:h-36 md:w-48 md:h-56 lg:w-80 lg:h-72 "
+          />
+        </div>
 
-        <div className="flex flex-col justify-center gap-4 lg:gap-8 w-72 h-80">
+        <div className="flex flex-col justify-center gap-4 lg:gap-8 w-auto lg:w-full h-auto">
           <h1 className="text-xl lg:text-3xl">{name}</h1>
           <p className="text-sm lg:text-base">{title}</p>
           <div className="flex flex-row gap-2 lg:gap-4 items-center">

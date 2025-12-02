@@ -9,12 +9,14 @@ export default function Hero() {
         <Image
           src={placeholder}
           alt="Placeholder"
-          className="absolute inset-0 z-0 w-full h-full"
+          className="absolute inset-0 z-0 w-full h-full object-cover"
         />
 
-        <div className="flex flex-col gap-8 px-8 relative z-10 ">
-          <h1 className="text-6xl">Strong governance for a bold future</h1>
-          <p className="break-normal w-[80vw]">
+        <div className="flex flex-col gap-8 px-8 lg:px-16 relative z-10 ">
+          <h1 className="text-4xl lg:text-6xl">
+            Strong governance for a bold future
+          </h1>
+          <p className="break-normal w-[80vw] text-sm lg:text-base">
             Good governance sits at the heart of Saha. Our work is built on
             trust; trust that comes from honesty, discipline, and doing the
             right thing even when no one is watching. Across every engagement,

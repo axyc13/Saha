@@ -69,14 +69,14 @@ export default function Footer() {
       </div>
 
       {/* Bottom Line */}
-      <div className="w-full lg:grid grid-cols-3  flex flex-row gap-8 justify-center">
+      <div className="w-full lg:grid grid-cols-3 px-8 lg:px-0 flex flex-row gap-8 justify-center">
         <div className="hidden md:flex" />
         <div className="flex justify-center">
           <p className="text-[9px] lg:text-sm">
-            © 2025 saha. All Rights Reserved.
+            © 2025 Saha. All Rights Reserved.
           </p>
         </div>
-        <div className="flex justify-end gap-8 pr-4 lg:pr-16">
+        <div className="flex justify-end gap-4 lg:gap-8 pr-4 lg:pr-16">
           <Link href="/termsofuse" className="text-[9px] lg:text-sm">
             Terms of Use
           </Link>

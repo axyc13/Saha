@@ -18,8 +18,8 @@ export default function Second() {
           </p>
           <p>
             Our team brings experience across finance, accounting, analytics,
-            and business strategy  but more importantly, we bring perspective.
-            We stay calm under pressure, focus on true understanding, and always
+            and business strategy but more importantly, we bring perspective. We
+            stay calm under pressure, focus on true understanding, and always
             aim to do the right thing, even when no one is watching.
           </p>
           <p>

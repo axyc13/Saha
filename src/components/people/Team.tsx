@@ -16,7 +16,7 @@ export default async function Team() {
           improvement.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 justify-items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 justify-items-center w-full px-4 lg:px-16">
         {people.map((p) => (
           <ProfileCard
             key={p.id}
