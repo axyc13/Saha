@@ -12,7 +12,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="relative w-full h-92 lg:h-112 text-white bg-black flex flex-col justify-around">
+    <footer className="relative w-full h-92 lg:h-112 text-white bg-black flex flex-col justify-around p-2 lg:p-8">
       <div className="flex flex-row md:gap-16 lg:gap-32 justify-center md:justify-normal items-center ">
         <div>
           <Image
@@ -51,7 +51,7 @@ export default function Footer() {
 
       <div
         className="hidden md:flex flex-row gap-5 absolute 
-      right-8 sm:right-22 md:right-16 bottom-24"
+      sm:right-22 right-16 bottom-24"
       >
         <HugeiconsIcon
           icon={Linkedin02Icon}
@@ -65,11 +65,11 @@ export default function Footer() {
           icon={NewTwitterIcon}
           className="w-6 md:w-8 h-6 md:h-8"
         />
-        <HugeiconsIcon icon={InstagramIcon} className="w-6 md:w- h-6 md:h-8" />
+        <HugeiconsIcon icon={InstagramIcon} className="w-6 md:w-8 h-6 md:h-8" />
       </div>
 
       {/* Bottom Line */}
-      <div className="w-full lg:grid grid-cols-3 px-8 lg:px-0 flex flex-row gap-8 justify-center">
+      <div className="w-full lg:grid grid-cols-3 px-8 lg:px-0 flex flex-row gap-8 justify-center text-center">
         <div className="hidden md:flex" />
         <div className="flex justify-center">
           <p className="text-[9px] lg:text-sm">

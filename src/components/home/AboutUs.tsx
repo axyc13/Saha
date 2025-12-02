@@ -30,15 +30,15 @@ export default function AboutUs() {
               our communities to grow.
             </p>
 
-            <div className="z-20 flex flex-row gap-2 lg:gap-16 items-center">
+            <div className="z-20 flex flex-row gap-2 md:gap-8 lg:gap-16 items-center">
               <Link href="/whoweare/#values">
-                <button className="text-xs md:text-base">Our Values</button>
+                <button className="text-[10px] md:text-base">Values</button>
               </Link>
               <Link href="/whoweare/governance">
-                <button className="text-xs md:text-base">Governance</button>
+                <button className="text-[10px] md:text-base">Governance</button>
               </Link>
               <Link href="/whoweare/people">
-                <button className="text-xs md:text-base">Our People</button>
+                <button className="text-[10px] md:text-base">People</button>
               </Link>
             </div>
           </div>
