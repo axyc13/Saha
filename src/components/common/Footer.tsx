@@ -49,23 +49,37 @@ export default function Footer() {
         </div>
       </div>
 
-      <div
-        className="hidden md:flex flex-row gap-5 absolute 
-      sm:right-22 right-16 bottom-24"
-      >
-        <HugeiconsIcon
-          icon={Linkedin02Icon}
-          className="w-6 md:w-8 h-6 md:h-8"
-        />
-        <HugeiconsIcon
-          icon={Facebook02Icon}
-          className="w-6 md:w-8 h-6 md:h-8"
-        />
-        <HugeiconsIcon
-          icon={NewTwitterIcon}
-          className="w-6 md:w-8 h-6 md:h-8"
-        />
-        <HugeiconsIcon icon={InstagramIcon} className="w-6 md:w-8 h-6 md:h-8" />
+      <div className="hidden md:flex flex-row gap-5 absolute sm:right-22 right-16 bottom-24">
+        <Link
+          href="https://www.linkedin.com/company/sahaca/posts/"
+          target="_blank"
+        >
+          <HugeiconsIcon
+            icon={Linkedin02Icon}
+            className="w-6 md:w-8 h-6 md:h-8"
+          />
+        </Link>
+
+        <Link href="/facebook" target="_blank">
+          <HugeiconsIcon
+            icon={Facebook02Icon}
+            className="w-6 md:w-8 h-6 md:h-8"
+          />
+        </Link>
+
+        <Link href="/x" target="_blank">
+          <HugeiconsIcon
+            icon={NewTwitterIcon}
+            className="w-6 md:w-8 h-6 md:h-8"
+          />
+        </Link>
+
+        <Link href="/instagram" target="_blank">
+          <HugeiconsIcon
+            icon={InstagramIcon}
+            className="w-6 md:w-8 h-6 md:h-8"
+          />
+        </Link>
       </div>
 
       {/* Bottom Line */}
@@ -77,10 +91,18 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex justify-end gap-4 lg:gap-8 pr-4 lg:pr-16">
-          <Link href="/termsofuse" className="text-[9px] lg:text-sm">
+          <Link
+            href="/termsofuse"
+            className="text-[9px] lg:text-sm"
+            target="_blank"
+          >
             Terms of Use
           </Link>
-          <Link href="/privacy" className="text-[9px] lg:text-sm">
+          <Link
+            href="/privacy"
+            className="text-[9px] lg:text-sm"
+            target="_blank"
+          >
             Privacy
           </Link>
         </div>

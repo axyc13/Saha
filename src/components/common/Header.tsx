@@ -57,6 +57,7 @@ export default function Header() {
           <Link
             href="/"
             onClick={(e) => {
+              // Closes menu when menu is open, else redirects to home
               if (mobileOpen || desktopOpen) {
                 e.preventDefault();
                 setMobileOpen(false);
