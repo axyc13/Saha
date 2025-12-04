@@ -5,7 +5,7 @@ import placeholder from "@/public/placeholder.jpg";
 
 export default function Services() {
   return (
-    <section className="w-screen max-h-screen md:min-h-screen text-black px-8 my-8 flex flex-col justify-center items-center gap-8 lg:gap-16">
+    <section className="w-screen min-h-screen text-black p-8 flex flex-col justify-center items-center gap-8 lg:gap-16">
       {/* Header */}
       <h1 className="text-4xl sm:text-5xl lg:text-6xl text-center">
         What Does Saha Do?

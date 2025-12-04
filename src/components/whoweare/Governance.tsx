@@ -5,7 +5,7 @@ import placeholder from "@/public/placeholder.jpg";
 
 export default function Governance() {
   return (
-    <section className="w-screen max-h-screen md:min-h-screen text-black p-8 flex flex-col items-center gap-8 lg:gap-16">
+    <section className="w-screen md:min-h-screen text-black p-8 flex flex-col items-center gap-8 lg:gap-16">
       <h1 className="lg:px-8 lg:self-end text-4xl lg:text-6xl">Governance</h1>
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full max-w-[92vw]">
         <div className="flex flex-col gap-8 lg:max-w-[48vw] lg:py-16 justify-center text-sm lg:text-base leading-relaxed">

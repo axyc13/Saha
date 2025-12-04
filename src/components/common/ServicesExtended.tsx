@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
+type Props = {
+  onBack: () => void; // for mobile back button
+  onLinkClick: () => void; // for link clicks
+};
 
-export default function ServicesExtended({ onBack }: { onBack: () => void }) {
+export default function ServicesExtended({ onBack, onLinkClick }: Props) {
   return (
     <div className="text-white bg-black h-screen md:h-[70vh]">
       <div className="hidden md:flex flex-row px-16 py-4">
@@ -14,31 +18,35 @@ export default function ServicesExtended({ onBack }: { onBack: () => void }) {
             aim to provide trust through assurance and help you transform, grow
             and operate.
           </p>
-          <Link href="/services">
+          <Link href="/services" onClick={onLinkClick}>
             <button>Explore</button>
           </Link>
         </div>
         <div className="flex flex-col flex-1 pl-16 justify-center">
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-md">Financial Management & Oversight</h2>
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-md">Strategic Planning & Advisory</h2>
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-md">Regulatory Compliance & Risk</h2>
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-md">
@@ -47,6 +55,7 @@ export default function ServicesExtended({ onBack }: { onBack: () => void }) {
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-md">
@@ -55,12 +64,14 @@ export default function ServicesExtended({ onBack }: { onBack: () => void }) {
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-md">Funding & Capital Structuring</h2>
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-md">Add-On Services</h2>
@@ -86,6 +97,7 @@ export default function ServicesExtended({ onBack }: { onBack: () => void }) {
         <div className="flex flex-col">
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-sm md:text-md">
@@ -94,6 +106,7 @@ export default function ServicesExtended({ onBack }: { onBack: () => void }) {
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-sm md:text-md">
@@ -102,12 +115,14 @@ export default function ServicesExtended({ onBack }: { onBack: () => void }) {
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-sm md:text-md">Regulatory Compliance & Risk</h2>
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-sm md:text-md">
@@ -116,6 +131,7 @@ export default function ServicesExtended({ onBack }: { onBack: () => void }) {
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-sm md:text-md">
@@ -124,6 +140,7 @@ export default function ServicesExtended({ onBack }: { onBack: () => void }) {
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-sm md:text-md">
@@ -132,6 +149,7 @@ export default function ServicesExtended({ onBack }: { onBack: () => void }) {
           </Link>
           <Link
             href="/services"
+            onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
             <h2 className="text-sm md:text-md">Add-On Services</h2>

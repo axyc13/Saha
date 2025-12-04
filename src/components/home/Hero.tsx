@@ -6,7 +6,7 @@ import placeholder from "@/public/placeholder.jpg";
 export default function Hero() {
   return (
     <section
-      className="w-screen max-h-screen md:min-h-screen p-8 bg-black text-white flex flex-col lg:flex-row 
+      className="w-screen min-h-screen p-8 bg-black text-white flex flex-col lg:flex-row 
       items-center justify-center lg:justify-around gap-8 lg:gap-16"
     >
       {/* Text content */}

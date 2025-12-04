@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
+type Props = {
+  onBack: () => void; // for mobile back button
+  onLinkClick: () => void; // for link clicks
+};
 
-export default function WhoWeAreExtended({ onBack }: { onBack: () => void }) {
+export default function WhoWeAreExtended({ onBack, onLinkClick }: Props) {
   return (
     <div className=" text-white bg-black h-screen md:h-[50vh]">
       {/*Desktop*/}
@@ -14,7 +18,7 @@ export default function WhoWeAreExtended({ onBack }: { onBack: () => void }) {
             helping businesses&apos; succeed, the public sector to achieve more,
             and our communities to grow.
           </p>
-          <Link href="/whoweare">
+          <Link href="/whoweare" onClick={onLinkClick}>
             <button>Explore</button>
           </Link>
         </div>
@@ -22,24 +26,28 @@ export default function WhoWeAreExtended({ onBack }: { onBack: () => void }) {
           <Link
             href="/whoweare"
             className="border-b p-4 hover:bg-white hover:text-black"
+            onClick={onLinkClick}
           >
             <h2 className="text-xl">Overview</h2>
           </Link>
           <Link
             href="/whoweare/governance"
             className="border-b p-4 hover:bg-white hover:text-black"
+            onClick={onLinkClick}
           >
             <h2 className="text-xl">Governance</h2>
           </Link>
           <Link
             href="/whoweare/#values"
             className="border-b p-4 hover:bg-white hover:text-black"
+            onClick={onLinkClick}
           >
             <h2 className="text-xl">Our Values</h2>
           </Link>
           <Link
             href="/whoweare/people"
             className="border-b p-4 hover:bg-white hover:text-black"
+            onClick={onLinkClick}
           >
             <h2 className="text-xl">Our People</h2>
           </Link>
@@ -63,24 +71,28 @@ export default function WhoWeAreExtended({ onBack }: { onBack: () => void }) {
           <Link
             href="/whoweare"
             className="border-b p-4 hover:bg-white hover:text-black"
+            onClick={onLinkClick}
           >
             <h2 className="text-lg md:text-xl">Overview</h2>
           </Link>
           <Link
             href="/whoweare/governance"
             className="border-b p-4 hover:bg-white hover:text-black"
+            onClick={onLinkClick}
           >
             <h2 className="text-lg md:text-xl">Governance</h2>
           </Link>
           <Link
             href="/whoweare/#values"
             className="border-b p-4 hover:bg-white hover:text-black"
+            onClick={onLinkClick}
           >
             <h2 className="text-lg md:text-xl">Our Values</h2>
           </Link>
           <Link
             href="/whoweare/people"
             className="border-b p-4 hover:bg-white hover:text-black"
+            onClick={onLinkClick}
           >
             <h2 className="text-lg md:text-xl">Our People</h2>
           </Link>

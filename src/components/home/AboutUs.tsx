@@ -17,28 +17,33 @@ export default function AboutUs() {
           />
 
           <div
-            className="absolute bottom bg-white z-10 h-[28vh] lg:h-[24vh] w-[84vw] 
+            className="absolute bottom bg-white z-10 h-[24vh] lg:h-[24vh] w-[84vw] 
               flex flex-col px-8 justify-center items-center gap-6 
               opacity-100 lg:opacity-0 lg:group-hover:opacity-100 
               translate-y-0 lg:translate-y-[40%] lg:group-hover:translate-y-0 
               transition-all duration-300 ease-out"
           >
-            <p className="z-20 text-xs md:text-sm lg:text-base">
+            <p className="hidden sm:flex z-20 text-xs md:text-sm lg:text-base">
               At Saha, we help clients build trust and reinvent so they can turn
               complexity into competitive advantage. We&apos;re passionate about
               helping businesses succeed, the public sector to achieve more, and
               our communities to grow.
             </p>
 
-            <div className="z-20 flex flex-row gap-2 md:gap-8 lg:gap-16 items-center">
+            <div className="z-20 grid grid-cols-2 lg:flex flex-row gap-2 md:gap-8 lg:gap-16 place-items-center justify-center items-center min-w-[84vw]">
+              <Link href="/whoweare/">
+                <button className="text-[10px] md:text-base">Learn More</button>
+              </Link>
               <Link href="/whoweare/#values">
-                <button className="text-[10px] md:text-base">Values</button>
+                <button className="text-[10px] md:text-base">Our Values</button>
               </Link>
               <Link href="/whoweare/governance">
                 <button className="text-[10px] md:text-base">Governance</button>
               </Link>
-              <Link href="/whoweare/people">
-                <button className="text-[10px] md:text-base">People</button>
+              <Link href="/whoweare/people" className="w-fit">
+                <button className="text-[10px] md:text-base w-fit">
+                  Our People
+                </button>
               </Link>
             </div>
           </div>
