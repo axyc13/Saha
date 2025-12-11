@@ -35,7 +35,7 @@ export default function ServicesExtended({ onBack, onLinkClick }: Props) {
         <div className="flex flex-col flex-1 pl-16 justify-center">
           {services.map((s) => (
             <Link
-              href={`/services/${s.title}`}
+              href={`/services/${s.slug}`}
               onClick={onLinkClick}
               className="border-b p-4 hover:bg-white hover:text-black"
               key={s.id}
@@ -71,7 +71,7 @@ export default function ServicesExtended({ onBack, onLinkClick }: Props) {
           </Link>
           {services.map((s) => (
             <Link
-              href={`/services/${s.title}`}
+              href={`/services/${s.slug}`}
               onClick={onLinkClick}
               className="border-b p-4 hover:bg-white hover:text-black"
               key={s.id}

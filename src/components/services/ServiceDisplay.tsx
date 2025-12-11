@@ -23,7 +23,7 @@ export default function ServiceDisplay({ services }: ServiceProps) {
         <div className="flex flex-col justify-center text-lg">
           {services.map((s) => (
             <Link
-              href="/services"
+              href={`/services/${s.slug}`}
               key={s.id}
               onMouseEnter={() => setHoveredServiceId(s.id)}
               onMouseLeave={() => setHoveredServiceId(null)}
@@ -41,7 +41,7 @@ export default function ServiceDisplay({ services }: ServiceProps) {
               <h1 className="text-xl lg:text-2xl text-center">
                 {activeService.title}
               </h1>
-              <RichText data={activeService.body} />
+              <RichText data={activeService["bullet-points"]} />
             </>
           ) : (
             <div className="flex flex-col items-center p-4 gap-4">

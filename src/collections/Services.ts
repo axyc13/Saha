@@ -24,7 +24,29 @@ const Services: CollectionConfig = {
       required: true,
     },
     {
-      name: "body",
+      name: "slug",
+      type: "text",
+      required: true,
+      unique: true,
+    },
+    {
+      name: "paragraph1",
+      type: "richText",
+      required: true,
+    },
+    {
+      name: "photo",
+      type: "upload",
+      relationTo: "media",
+      required: true,
+    },
+    {
+      name: "bullet-points",
+      type: "richText",
+      required: true,
+    },
+    {
+      name: "paragraph2",
       type: "richText",
       required: true,
     },
