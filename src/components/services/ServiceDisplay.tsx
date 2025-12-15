@@ -11,7 +11,6 @@ interface ServiceProps {
 
 export default function ServiceDisplay({ services }: ServiceProps) {
   const [hoveredServiceId, setHoveredServiceId] = useState<string | null>(null);
-
   const activeService = services.find((s) => s.id === hoveredServiceId);
 
   return (

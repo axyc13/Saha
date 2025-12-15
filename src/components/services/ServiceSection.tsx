@@ -1,7 +1,7 @@
 import { getServices } from "@/src/lib/payload/services";
-import ServiceFunction from "./ServiceDisplay";
+import ServiceDisplay from "./ServiceDisplay";
 
 export default async function ServiceSection() {
   const services = await getServices();
-  return <ServiceFunction services={services} />;
+  return <ServiceDisplay services={services} />;
 }
