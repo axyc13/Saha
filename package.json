@@ -33,5 +33,10 @@
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
     "why-is-node-running": "^3.2.2"
+  },
+  "pnpm": {
+    "neverBuiltDependencies": [
+      "thread-stream"
+    ]
   }
 }
