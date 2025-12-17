@@ -3,7 +3,7 @@ export const dynamic = "force-dynamic";
 // or
 export const revalidate = 0;
 
-export async function getPolicies() {
+export async function getContacts() {
   const payloadUrl = process.env.NEXT_PUBLIC_PAYLOAD_URL;
 
   // If no URL is set, return empty array (build-time safety)
