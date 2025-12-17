@@ -16,7 +16,7 @@
     "@payloadcms/richtext-lexical": "^3.64.0",
     "graphql": "^16.12.0",
     "next": "16.0.10",
-    "payload": "^3.64.0",
+    "payload": "^3.68.5",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "resend": "^6.5.2",
