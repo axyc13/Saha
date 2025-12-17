@@ -16,7 +16,6 @@ import Services from "./collections/Services";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
-console.log("DATABASE_URL:", process.env.DATABASE_URL);
 
 export default buildConfig({
   admin: {
