@@ -1,6 +1,5 @@
 import React from "react";
 import { Service } from "@/src/types/service";
-import Link from "next/link";
 import BreadCrumb from "../../common/BreadCrumb";
 
 interface ServiceProp {

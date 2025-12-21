@@ -45,10 +45,10 @@ export default function ServiceDisplay({ services }: ServiceProps) {
           ) : (
             <div className="flex flex-col items-center p-4 gap-4">
               <h1 className="text-xl lg:text-2xl text-center">What We Offer</h1>
-              <ul className="list-disc">
-                <li>Hover on a service to get a brief overview</li>
-                <br />
+              <ul className="list-disc gap-2 flex flex-col">
+                <li>Hover on a service to get an overview</li>
                 <li>Click on a service to explore further</li>
+                <li>Scroll down to view all services</li>
               </ul>
             </div>
           )}

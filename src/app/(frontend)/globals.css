@@ -87,3 +87,7 @@ input {
   list-style-type: disc !important;
   margin-left: 1rem !important;
 }
+
+.payload-richtext {
+  color: inherit;
+}
