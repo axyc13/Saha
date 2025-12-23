@@ -27,8 +27,16 @@ export default function ContactForm() {
             {/* Saha Adress */}
             <div className="border w-80 h-80 hidden lg:flex flex-col p-8 gap-2 text-sm">
               <h1 className="text-2xl">Satyam Saha CA</h1>
-              <p>20 Boundary Road, Blockhouse Bay, Auckland 0600</p>
-              <p>1105B Karamu Road North, Hastings, Hawke&apos;s Bay</p>
+              <p>
+                <b>Auckland:</b>
+                <br />
+                20 Boundary Road, Blockhouse Bay, Auckland 0600
+              </p>
+              <p>
+                <b>Hawke&apos;s Bay:</b>
+                <br />
+                1105B Karamu Road North, Hastings
+              </p>
               <p>
                 <b>Email:</b>
                 <br />

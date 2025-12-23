@@ -27,7 +27,6 @@ export default function ServicePageContent({ service }: ServiceProp) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-[88vw] h-[40vh] lg:h-screen bg-black"></div>
     </section>
   );
 }
