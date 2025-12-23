@@ -25,7 +25,7 @@ export default function Second({
             alt="placeholder"
             width={288}
             height={320}
-            className="object-cover w-auto h-auto sm:w-32 sm:h-36 md:w-48 md:h-56 lg:w-80 lg:h-72 "
+            className="object-cover w-32 h-36 md:w-48 md:h-56 lg:w-80 lg:h-72 "
           />
         </div>
 
