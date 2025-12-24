@@ -1,14 +1,12 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import placeholder from "@/public/placeholder.jpg";
 
 export default function AboutUs() {
   return (
     <section className="relative w-full h-[72vh] text-black flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16 mx-auto bg-white">
       {/* Header */}
-      <div className="flex flex-col lg:flex-row justify-center items-center w-[88vw] gap-8 lg:gap-16">
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl">What Does Saha Do?</h1>
+      <div className="flex flex-col lg:flex-row justify-center items-center w-[80vw] lg:w-[88vw] gap-8 lg:gap-16">
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl">What is Saha?</h1>
 
         {/* Content */}
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
@@ -25,7 +23,9 @@ export default function AboutUs() {
                 <button className="text-[10px] md:text-base">Our Values</button>
               </Link>
               <Link href="/whoweare/governance">
-                <button className="text-[10px] md:text-base">Governance</button>
+                <button className="text-[10px] md:text-base">
+                  Our Governance
+                </button>
               </Link>
               <Link href="/whoweare/people" className="w-fit">
                 <button className="text-[10px] md:text-base w-fit">
@@ -37,50 +37,5 @@ export default function AboutUs() {
         </div>
       </div>
     </section>
-    // <section className="w-screen max-h-screen md:min-h-screen p-8 bg-white text-black flex justify-center items-center">
-    //   <div className="flex flex-col gap-8 items-center">
-    //     <h1 className="text-4xl sm:text-5xl lg:text-6xl">What is Saha?</h1>
-
-    //     <div className="relative group w-[84vw] h-[72vh] flex flex-col gap-8 justify-end rounded-b-4xl drop-shadow-xl overflow-hidden">
-    //       <Image
-    //         src={placeholder}
-    //         alt="Placeholder"
-    //         className="absolute inset-0 z-0 w-full h-full object-cover"
-    //       />
-
-    //       <div
-    //         className="absolute bottom bg-white z-10 h-[24vh] lg:h-[24vh] w-[84vw]
-    //           flex flex-col px-8 justify-center items-center gap-6
-    //           opacity-100 lg:opacity-0 lg:group-hover:opacity-100
-    //           translate-y-0 lg:translate-y-[40%] lg:group-hover:translate-y-0
-    //           transition-all duration-300 ease-out"
-    //       >
-    //         <p className="hidden sm:flex z-20 text-xs md:text-sm lg:text-base">
-    //           At Saha, we help clients build trust and reinvent so they can turn
-    //           complexity into competitive advantage. We&apos;re passionate about
-    //           helping businesses succeed, the public sector to achieve more, and
-    //           our communities to grow.
-    //         </p>
-
-    //         <div className="z-20 grid grid-cols-2 lg:flex flex-row gap-2 md:gap-8 lg:gap-16 place-items-center justify-center items-center min-w-[84vw]">
-    //           <Link href="/whoweare/">
-    //             <button className="text-[10px] md:text-base">Learn More</button>
-    //           </Link>
-    //           <Link href="/whoweare/#values">
-    //             <button className="text-[10px] md:text-base">Our Values</button>
-    //           </Link>
-    //           <Link href="/whoweare/governance">
-    //             <button className="text-[10px] md:text-base">Governance</button>
-    //           </Link>
-    //           <Link href="/whoweare/people" className="w-fit">
-    //             <button className="text-[10px] md:text-base w-fit">
-    //               Our People
-    //             </button>
-    //           </Link>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
   );
 }

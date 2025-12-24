@@ -11,11 +11,9 @@ export default async function WhoWeArePage() {
     <div>
       <Header />
       <Hero />
-      <div className="grid grid-cols-1 lg:grid-cols-2 p-16">
-        <Governance />
-        <OurPeople />
-      </div>
+      <Governance />
       <OurValues />
+      <OurPeople />
       <Footer />
     </div>
   );

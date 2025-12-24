@@ -32,7 +32,7 @@ export default async function OurValues() {
       id="values"
       className="w-screen min-h-screen py-8 text-black flex flex-col gap-8"
     >
-      <h1 className="flex justify-center md:justify-normal text-4xl md:text-6xl lg:px-16">
+      <h1 className="flex justify-center md:justify-normal text-4xl md:text-6xl lg:px-24">
         Our Values
       </h1>
 

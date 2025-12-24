@@ -13,8 +13,8 @@ export async function sendFormEmail(formData: FormData) {
   const message = formData.get("message");
 
   await resend.emails.send({
-    from: "ache337@aucklanduni.ac.nz",
-    to: "ache337@aucklanduni.ac.nz",
+    from: "test@saha.co.nz",
+    to: "test@saha.co.nz",
     subject: `New message: ${topic}`,
     text: `
       Topic: ${topic}
