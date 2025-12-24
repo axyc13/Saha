@@ -2,8 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import hero from "@/public/hero.png";
+import { motion } from "framer-motion";
+import { MotionStyle } from "framer-motion";
 
-export default function Hero() {
+export default function Hero({ textStyle }: { textStyle?: MotionStyle }) {
   return (
     <section
       className="relative w-screen min-h-screen bg-black text-white 
@@ -15,11 +17,14 @@ export default function Hero() {
         alt="hero image"
         fill
         priority
-        className="object-cover z-0"
+        className="object-cover object-left lg:object-top z-0 opacity-80"
       />
 
       {/* Text content */}
-      <div className="relative z-10 flex flex-col gap-4 md:gap-8 max-w-lg text-center md:text-right p-8 lg:p-0 lg:mr-24 lg:mb-16">
+      <motion.div
+        style={textStyle}
+        className="relative z-10 flex flex-col gap-4 md:gap-8 max-w-lg text-center md:text-right p-8 lg:p-0 lg:mr-24 lg:mb-16"
+      >
         <h1 className="text-4xl sm:text-5xl lg:text-6xl">
           Sky&apos;s the Limit
         </h1>
@@ -31,7 +36,7 @@ export default function Hero() {
         <Link href="/contactus">
           <button>Contact Us</button>
         </Link>
-      </div>
+      </motion.div>
     </section>
   );
 }
