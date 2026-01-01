@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Second() {
   return (
-    <section className="w-screen min-h-screen text-black flex flex-col justify-center p-8 lg:p-16 gap-8 lg:gap-0">
+    <section className="w-screen min-h-screen text-black flex flex-col justify-center p-8 lg:p-16 gap-8 lg:gap-0 items-center">
       <div className="flex flex-col items-center justify-center gap-8">
         <h1 className="text-2xl md:text-3xl lg:text-4xl">
           A commitment to strong, responsible business practices
         </h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-16 w-full max-w-[92vw]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-16 w-full max-w-[88vw]">
         <div
           className="flex flex-col gap-8 lg:max-w-[48vw] lg:py-16 justify-center text-sm lg:text-base leading-relaxed
             [&_h1]:text-xl [&_h1]:lg:text-2xl"

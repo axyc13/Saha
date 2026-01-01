@@ -17,7 +17,7 @@ export default function ServicesExtended({ onBack, onLinkClick }: Props) {
   }, []);
 
   return (
-    <div className="text-white bg-black h-screen md:h-[70vh]">
+    <div className="text-white bg-black h-auto">
       <div className="hidden md:flex flex-row px-16 py-4">
         <div className="border-r-2 pr-16">
           <h2 className="text-2xl pb-8">Our Services</h2>

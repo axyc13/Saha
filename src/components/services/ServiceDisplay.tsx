@@ -14,7 +14,7 @@ export default function ServiceDisplay({ services }: ServiceProps) {
   const activeService = services.find((s) => s.id === hoveredServiceId);
 
   return (
-    <section className="w-screen min-h-screen text-black px-8 flex flex-col gap-8 lg:gap-16 items-center justify-center">
+    <section className="w-screen min-h-screen text-black p-8 lg:p-16 flex flex-col gap-8 lg:gap-16 items-center justify-center">
       <h1 className="text-3xl md:text-4xl lg:text-5xl">Overview</h1>
 
       {/* Service List*/}
@@ -34,13 +34,15 @@ export default function ServiceDisplay({ services }: ServiceProps) {
         </div>
 
         {/* Service Info Box */}
-        <div className="hidden md:flex border rounded-4xl w-100 h-100 flex-col items-center p-8 gap-4 ">
+        <div className="hidden md:flex border rounded-4xl w-100 h-auto flex-col items-center p-8 gap-4 text-sm">
           {activeService ? (
             <>
-              <h1 className="text-xl lg:text-2xl text-center">
-                {activeService.title}
-              </h1>
-              <RichText data={activeService["bullet-points"]} />
+              <div className="flex flex-col items-center p-4 gap-4">
+                <h1 className="text-xl lg:text-2xl text-center">
+                  {activeService.title}
+                </h1>
+                <RichText data={activeService["bullet-points"]} />
+              </div>
             </>
           ) : (
             <div className="flex flex-col items-center p-4 gap-4">
