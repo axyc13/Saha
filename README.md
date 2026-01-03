@@ -1,44 +1,18 @@
-# Official Repository for the Saha Website
-
-## Run on local device (until deployed)
-
-Follow these steps in your terminal:
-
-```
-git clone https://github.com/axyc13/saha.git
-```
-
-```
-cd saha
-```
-
-```
-pnpm install
-```
-
-```
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
+# Official Repository for the [Saha Website](https://www.saha.co.nz)
 
 ## Tech Stack:
 <ul>
   <li>
-    React, Next.js
+    Frameworks: React, Next.js
   </li>
     <li>
-    TypeScript
+    Frontend: TypeScript w/ TailwindCSS
   </li>
     <li>
-    TailwindCSS
+    Backend: PayloadCMS connected to Supabase (PostgreSQL)
   </li>
     <li>
-    Payload CMS w/ PostgreSQL
-  </li>
-    <li>
-    AWS
+    Hosting: Vercel, AWS S3
   </li>
 </ul>
 
