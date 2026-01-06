@@ -52,7 +52,7 @@ export default function ContactForm() {
               <p>
                 <b>Email:</b>
                 <br />
-                satyamsaha.ca@gmail.com
+                business@saha.co.nz
               </p>
               <p>
                 <b>Phone:</b>

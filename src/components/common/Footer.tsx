@@ -12,7 +12,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="relative w-full h-92 lg:h-112 text-white bg-black flex flex-col justify-around p-2 lg:p-8">
+    <footer className="relative w-screen h-auto text-white bg-black flex flex-col justify-around py-8 lg:p-8">
       <div className="flex flex-row md:gap-16 lg:gap-32 justify-center md:justify-normal items-center ">
         <div>
           <Image
@@ -85,9 +85,15 @@ export default function Footer() {
       {/* Bottom Line */}
       <div className="w-full lg:grid grid-cols-3 px-8 lg:px-0 flex flex-row gap-8 justify-center text-center">
         <div className="hidden md:flex" />
-        <div className="flex justify-center">
+        <div className="flex flex-col justify-center gap-2">
           <p className="text-[9px] lg:text-sm">
             © 2025 Saha. All Rights Reserved.
+          </p>
+          <p className="text-[8px] lg:text-xs">
+            Designed by {""}
+            <Link target="_blank" href="https://www.andrewxychen.com">
+              Andrew Chen
+            </Link>
           </p>
         </div>
         <div className="flex justify-end gap-4 lg:gap-8 pr-4 lg:pr-16">
