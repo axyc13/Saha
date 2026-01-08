@@ -14,6 +14,7 @@ import Policies from "./collections/Policies";
 import Values from "./collections/Values";
 import Contacts from "./collections/Contacts";
 import Services from "./collections/Services";
+import Ulux from "./collections/UluxOptions";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -25,7 +26,16 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Terms, Policies, Values, Contacts, Services],
+  collections: [
+    Users,
+    Media,
+    Terms,
+    Policies,
+    Values,
+    Contacts,
+    Services,
+    Ulux,
+  ],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || "",
   cors: ["https://www.saha.co.nz"],

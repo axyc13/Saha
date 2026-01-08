@@ -22,7 +22,7 @@ export default function ServiceDisplay({ services }: ServiceProps) {
         <div className="flex flex-col justify-center text-lg">
           {services.map((s) => (
             <Link
-              href={`/services/${s.slug}`}
+              href={`/services/finance/${s.slug}`}
               key={s.id}
               onMouseEnter={() => setHoveredServiceId(s.id)}
               onMouseLeave={() => setHoveredServiceId(null)}

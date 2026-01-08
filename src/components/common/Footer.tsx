@@ -13,7 +13,7 @@ import {
 export default function Footer() {
   return (
     <footer className="relative w-screen h-auto text-white bg-black flex flex-col justify-around py-8 lg:p-8">
-      <div className="flex flex-row md:gap-16 lg:gap-32 justify-center md:justify-normal items-center ">
+      <div className="flex flex-row md:gap-16 lg:gap-32 justify-center md:justify-normal items-center">
         <div>
           <Image
             src={logo}
@@ -83,9 +83,9 @@ export default function Footer() {
       </div>
 
       {/* Bottom Line */}
-      <div className="w-full lg:grid grid-cols-3 px-8 lg:px-0 flex flex-row gap-8 justify-center text-center">
+      <div className="w-full lg:grid grid-cols-3 px-8 lg:px-0 flex flex-col gap-8 justify-center text-center">
         <div className="hidden md:flex" />
-        <div className="flex flex-col justify-center gap-2">
+        <div className="hidden md:flex flex-col justify-center gap-2">
           <p className="text-[9px] lg:text-sm">
             © 2025 Saha. All Rights Reserved.
           </p>
@@ -96,7 +96,7 @@ export default function Footer() {
             </Link>
           </p>
         </div>
-        <div className="flex justify-end gap-4 lg:gap-8 pr-4 lg:pr-16">
+        <div className="flex justify-center lg:justify-end gap-4 lg:gap-8 pr-4 lg:pr-16">
           <Link
             href="/termsofuse"
             className="text-[9px] lg:text-sm"
@@ -111,6 +111,18 @@ export default function Footer() {
           >
             Privacy
           </Link>
+        </div>
+        {/* Mobile Design Move */}
+        <div className="flex md:hidden flex-col justify-center gap-2">
+          <p className="text-[9px] lg:text-sm">
+            © 2025 Saha. All Rights Reserved.
+          </p>
+          <p className="text-[8px] lg:text-xs">
+            Designed by {""}
+            <Link target="_blank" href="https://www.andrewxychen.com">
+              Andrew Chen
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

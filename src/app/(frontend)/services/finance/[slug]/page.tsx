@@ -1,10 +1,10 @@
 import { getService } from "@/src/lib/payload/servicePage";
-import NotFound from "../../[...notFound]/page";
-import ServicePageContent from "@/src/components/services/pages/ServicePageContent";
-import ServicePageHero from "@/src/components/services/pages/ServicePageHero";
+import NotFound from "../../../[...notFound]/page";
+import ServicePageContent from "@/src/components/services/finance/pages/ServicePageContent";
+import ServicePageHero from "@/src/components/services/finance/pages/ServicePageHero";
 import Header from "@/src/components/common/Header";
 import Footer from "@/src/components/common/Footer";
-import "../../globals.css";
+import "../../../globals.css";
 
 export default async function ServicePage({
   params,
