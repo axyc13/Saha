@@ -16,9 +16,9 @@ export default function ULux() {
             <p>
               &apos;U Lux&apos; or Ultra Luxury redefines the way high-end
               travel is experienced. More than a planning service, we provide a
-              wide range of solutions from managing itineraries, logistics and
+              wide range of solutions from managing itineraries, logistics, and
               reservations. Our mission is simple: to remove complexity and give
-              discerning travellers effortless, personalised journeys.
+              you effortless and personalised journeys.
             </p>
             <div className="flex justify-center lg:justify-start">
               <Link href="/services/ulux">
