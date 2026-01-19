@@ -33,9 +33,14 @@ export default function Hero({ textStyle }: { textStyle?: MotionStyle }) {
           Helping people and businesses build clarity, make confident decisions,
           and realise limitless possibilities.
         </p>
-        <Link href="/contactus">
-          <button>Contact Us</button>
-        </Link>
+        <div className="flex flex-row gap-4 justify-center lg:justify-end items-center">
+          <Link href="/contactus">
+            <button>Contact Us</button>
+          </Link>
+          <Link href="/services" className="flex lg:hidden">
+            <button>Chapters</button>
+          </Link>
+        </div>
       </motion.div>
     </section>
   );
