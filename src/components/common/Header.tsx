@@ -89,7 +89,7 @@ export default function Header() {
             className="flex items-center cursor-pointer"
             onClick={() => toggleOpen("services")}
           >
-            Our Services
+            Chapters
             <Image
               src={ArrowDropDown}
               alt="Arrow"
@@ -108,14 +108,15 @@ export default function Header() {
         </nav>
 
         {/* Mobile Nav Burger*/}
-        <nav className="flex md:hidden justify-end flex-1">
-          <HugeiconsIcon
-            icon={mobileOpen ? Cancel01Icon : Menu01Icon}
-            onClick={() => {
-              setMobileOpen(!mobileOpen);
-              setDesktopOpen("mobile");
-            }}
-          />
+        <nav
+          className="flex md:hidden justify-end flex-1 flex-row gap-2"
+          onClick={() => {
+            setMobileOpen(!mobileOpen);
+            setDesktopOpen("mobile");
+          }}
+        >
+          <p>Menu</p>
+          <HugeiconsIcon icon={mobileOpen ? Cancel01Icon : Menu01Icon} />
         </nav>
 
         <p className="text-sm">NZ-EN</p>
@@ -182,7 +183,7 @@ export default function Header() {
             onClick={() => toggleOpen("services")}
             className="flex flex-row items-center cursor-pointer"
           >
-            Our Services
+            Chapters
             <Image src={ArrowDropDown} alt="Arrow" className="rotate-270" />
           </div>
           <Link href="/contactus">Contact Us</Link>

@@ -57,6 +57,10 @@ button:hover {
   border: 2px solid #f9fdfe;
 }
 
+.arapey {
+  font-family: var(--font-arapey);
+}
+
 input {
   font-family: var(--font-inter);
   font-weight: 400;

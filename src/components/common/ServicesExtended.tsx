@@ -11,7 +11,7 @@ export default function ServicesExtended({ onBack, onLinkClick }: Props) {
     <div className="text-white bg-black h-auto lg:py-8">
       <div className="hidden md:flex flex-row px-16 py-4">
         <div className="border-r-2 pr-16">
-          <h2 className="text-2xl pb-8">Our Services</h2>
+          <h2 className="text-2xl pb-8">Chapters</h2>
           <p className="text-sm break-normal w-56 pb-8">
             Saha provides industry-focused services for public and private
             clients. Our experienced staff, combined with our global network,
@@ -43,7 +43,7 @@ export default function ServicesExtended({ onBack, onLinkClick }: Props) {
             onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
-            <h2 className="text-xl">ULux</h2>
+            <h2 className="text-xl">U Lux</h2>
           </Link>
           <Link
             href="/services/web"
@@ -58,7 +58,7 @@ export default function ServicesExtended({ onBack, onLinkClick }: Props) {
       {/* Mobile */}
       <div className="flex md:hidden flex-col p-8 gap-8">
         <div className="flex flex-row items-center gap-8">
-          <h2 className="text-2xl">Our Services</h2>
+          <h2 className="text-2xl">Chapters</h2>
           <button onClick={onBack}>Back</button>
         </div>
 
@@ -90,7 +90,7 @@ export default function ServicesExtended({ onBack, onLinkClick }: Props) {
             onClick={onLinkClick}
             className="border-b p-4 hover:bg-white hover:text-black"
           >
-            <h2 className="text-sm md:text-md">ULux</h2>
+            <h2 className="text-sm md:text-md">U Lux</h2>
           </Link>
           <Link
             href="/services/web"

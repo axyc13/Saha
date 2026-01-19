@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Process() {
   return (
-    <section className="bg-gray-100 px-8 lg:px-24 py-16 h-auto flex flex-col justify-center items-center gap-16">
+    <section className="bg-gray-100 w-screen h-auto px-8 lg:px-24 py-16 flex flex-col justify-center items-center gap-16">
       <h1 className="text-4xl lg:text-6xl text-center">Our process</h1>
-      <div className="grid grid-cols-2 lg:grid-cols-4 items-center gap-8 justify-center">
+      <div className="grid grid-cols-2 lg:grid-cols-4 items-center gap-16 justify-center">
         {[
           {
             step: "01",

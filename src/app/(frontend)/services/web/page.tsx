@@ -13,8 +13,8 @@ export default async function WebServicePage() {
       <Header />
       <Hero />
       <Features />
-      <Examples />
       <Process />
+      <Examples />
       <CTA />
       <Footer />
     </div>
