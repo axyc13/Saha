@@ -16,9 +16,9 @@ export default function Hero({ onArrowClick }: HeroProps) {
         alt="background image"
         className="object-cover w-full h-full absolute inset-0 z-0 opacity-60"
       />
-      <div className="flex flex-col justify-end py-8 h-full items-center relative z-10">
+      <div className="flex flex-col justify-end py-16 h-full items-center relative z-10">
         <div className="flex flex-col items-center gap-4">
-          <h3 className="text-xl lg:text-2xl w-[64vw] lg:w-[56vw] text-center">
+          <h3 className="text-xl lg:text-2xl w-[80vw] lg:w-[56vw] text-center">
             “We offer a curated range of private travel planning services,
             designed for individuals who value exclusivity.”
           </h3>

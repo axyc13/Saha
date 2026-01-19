@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Pricing() {
   return (
-    <section className="py-32 h-auto flex flex-col gap-8 lg:px-24">
+    <section className="py-32 h-auto flex flex-col gap-8 lg:px-24 bg-[#f2f1ed]">
       <h1 className="text-4xl md:text-5xl text-center">Pricing Plans</h1>
       <p className="text-xl px-8 text-center">
         Choose the package that fits your needs

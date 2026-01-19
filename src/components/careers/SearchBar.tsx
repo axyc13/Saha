@@ -15,8 +15,8 @@ export default function SearchBar() {
 
       <p className="text-sm lg:text-base break-normal w-[80vw]">
         At this stage we have wonderful people contributing to saha. Please feel
-        free to send us a copy of your CV to <u>satyamsaha.ca@gmail.com</u> and
-        we will be in touch.
+        free to send us a copy of your CV to <u>business@saha.co.nz</u> and we
+        will be in touch.
       </p>
     </section>
   );
