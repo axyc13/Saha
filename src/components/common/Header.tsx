@@ -89,7 +89,7 @@ export default function Header() {
             className="flex items-center cursor-pointer"
             onClick={() => toggleOpen("services")}
           >
-            Chapters
+            Services
             <Image
               src={ArrowDropDown}
               alt="Arrow"
@@ -183,7 +183,7 @@ export default function Header() {
             onClick={() => toggleOpen("services")}
             className="flex flex-row items-center cursor-pointer"
           >
-            Chapters
+            Services
             <Image src={ArrowDropDown} alt="Arrow" className="rotate-270" />
           </div>
           <Link href="/contactus">Contact Us</Link>

@@ -66,13 +66,25 @@ input {
   font-weight: 400;
   font-size: 16px;
   color: #191411;
-  border-radius: 45px;
   padding: 10px 25px;
-  border: 1px solid #191411;
+  border-bottom: 1px solid #191411;
+}
+
+textarea {
+  padding: 10px 25px;
+  field-sizing: content;
+  min-height: 50px;
+  max-height: 300px;
+  box-sizing: border-box;
 }
 
 * {
   font-family: var(--font-inter);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
 }
 
 .extendedAnimationOpen {

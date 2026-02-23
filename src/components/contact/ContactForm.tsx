@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Form from "next/form";
 import Link from "next/link";
 import { sendFormEmail } from "./Form";
+import "src/app/(frontend)/globals.css";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
@@ -23,52 +24,22 @@ export default function ContactForm() {
         <div className="flex flex-col gap-8">
           <div className="flex flex-row justify-around items-center">
             {/* Personal Details */}
-            <div className="flex flex-col gap-8 [&_input]:lg:w-[32vw] [&_input]:h-[8vh] flex-1">
+            <div className="flex flex-col gap-8 [&_input]:w-[32vw] [&_input]:h-[8vh] flex-1">
               <input name="topic" placeholder="Topic*" required />
               <input name="firstName" placeholder="First Name*" required />
               <input name="lastName" placeholder="Last Name*" required />
               <input name="email" placeholder="Email*" type="email" required />
-              <input
-                name="phone"
-                placeholder="Phone Number*"
-                type="number"
+              <input name="phone" placeholder="Phone Number*" required />
+              <textarea
+                name="message"
+                className="w-full resize-none border-b border-black"
+                placeholder="Your Message*"
                 required
               />
-            </div>
-
-            {/* Saha Address */}
-            <div className="border w-80 h-80 hidden lg:flex flex-col p-8 gap-2 text-sm">
-              <h1 className="text-2xl">Satyam Saha CA</h1>
-              <p>
-                <b>Auckland:</b>
-                <br />
-                20 Boundary Road, Blockhouse Bay, Auckland 0600
-              </p>
-              <p>
-                <b>Hawke&apos;s Bay:</b>
-                <br />
-                1105B Karamu Road North, Hastings
-              </p>
-              <p>
-                <b>Email:</b>
-                <br />
-                business@saha.co.nz
-              </p>
-              <p>
-                <b>Phone:</b>
-                <br />
-                022 315 5751
-              </p>
             </div>
           </div>
 
           {/* Message Box */}
-          <textarea
-            name="message"
-            className="w-full h-[32vh] lg:h-[50vh] resize-none p-8 rounded-[45px] border border-black"
-            placeholder="Your Message*"
-            required
-          />
 
           {/* Terms and Submit Box */}
           <div className="flex flex-row gap-2 justify-center">
