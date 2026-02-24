@@ -11,7 +11,7 @@ export default function OurPeople() {
         {/* Content */}
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
           {/* Text */}
-          <div className="flex flex-col gap-8 text-left text-sm lg:text-base leading-relaxed">
+          <div className="flex flex-col gap-8 text-left text-sm lg:text-lg xl:text-xl leading-relaxed">
             <p>
               At Saha, everything begins with our people. Our team is driven by
               curiosity, grounded in honesty, and committed to creating real
@@ -24,7 +24,7 @@ export default function OurPeople() {
               We believe in limitless potential; and together, we make
               possibilities happen.
             </p>
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start text-[10px] md:text-lg xl:text-xl">
               <Link href="/whoweare/people">
                 <button>Learn More</button>
               </Link>

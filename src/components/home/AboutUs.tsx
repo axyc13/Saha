@@ -13,7 +13,7 @@ export default function AboutUs() {
         {/* Content */}
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
           {/* Text */}
-          <div className="flex flex-col gap-8 text-left text-sm lg:text-lg leading-relaxed">
+          <div className="flex flex-col gap-8 text-left text-sm lg:text-lg xl:text-xl leading-relaxed">
             <p>
               At Saha, we help clients build trust and reinvent so they can turn
               complexity into competitive advantage. We&apos;re passionate about
@@ -26,15 +26,19 @@ export default function AboutUs() {
                 md:flex md:[&>*:first-child]:col-span-1"
             >
               <Link href="/whoweare/governance" className="w-fit">
-                <button className="text-[10px] md:text-lg w-fit">
+                <button className="text-[10px] md:text-lg xl:text-xl w-fit">
                   Governance
                 </button>
               </Link>
               <Link href="/whoweare/#values">
-                <button className="text-[10px] md:text-lg">Our Values</button>
+                <button className="text-[10px] md:text-lg xl:text-xl">
+                  Our Values
+                </button>
               </Link>
               <Link href="/whoweare/people">
-                <button className="text-[10px] md:text-lg ">Our People</button>
+                <button className="text-[10px] md:text-lg xl:text-xl">
+                  Our People
+                </button>
               </Link>
             </div>
           </div>

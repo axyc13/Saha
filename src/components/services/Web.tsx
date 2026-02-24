@@ -12,7 +12,7 @@ export default function Web() {
         {/* Content */}
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
           {/* Text */}
-          <div className="flex flex-col gap-8 text-left text-sm lg:text-lg leading-relaxed">
+          <div className="flex flex-col gap-8 text-left text-sm lg:text-lg xl:text-xl leading-relaxed">
             <p>
               Saha delivers end-to-end website design and development services,
               guiding your business from initial idea to a fully deployed
@@ -26,7 +26,7 @@ export default function Web() {
               existing one, we help you create a confident, credible online
               presence.
             </p>
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start text-[10px] md:text-lg xl:text-xl">
               <Link href="/services/web">
                 <button>Learn More</button>
               </Link>

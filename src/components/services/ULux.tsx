@@ -12,7 +12,7 @@ export default function ULux() {
         {/* Content */}
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
           {/* Text */}
-          <div className="flex flex-col gap-8 text-left text-sm lg:text-lg leading-relaxed">
+          <div className="flex flex-col gap-8 text-left text-sm lg:text-lg xl:text-xl leading-relaxed">
             <p>
               &apos;U Lux&apos; or Ultra Luxury redefines the way high-end
               travel is experienced. More than a planning service, we provide a
@@ -20,7 +20,7 @@ export default function ULux() {
               reservations. Our mission is simple: to remove complexity and give
               you effortless and personalised journeys.
             </p>
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start text-[10px] md:text-lg xl:text-xl">
               <Link href="/services/ulux">
                 <button>Learn More</button>
               </Link>

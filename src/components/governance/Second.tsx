@@ -54,24 +54,7 @@ export default function Second() {
             </p>
           </div>
         </div>
-        {/* <div className="flex justify-center lg:max-w-[48%] w-full">
-            <Image
-              src={placeholder}
-              alt="Placeholder"
-              className="w-100 h-60 md:w-150 md:h-80 lg:w-full lg:h-auto object-cover"
-            />
-          </div> */}
       </div>
-
-      {/* <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full max-w-[92vw]">
-          <div className="hidden lg:flex justify-center lg:max-w-[48%] w-full">
-            <Image
-              src={placeholder}
-              alt="Placeholder"
-              className="w-100 h-60 md:w-150 md:h-80 lg:w-full lg:h-auto object-cover"
-            />
-          </div>
-        </div> */}
     </section>
   );
 }

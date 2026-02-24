@@ -73,7 +73,7 @@ input {
 textarea {
   padding: 10px 25px;
   field-sizing: content;
-  min-height: 50px;
+  min-height: 60px;
   max-height: 300px;
   box-sizing: border-box;
 }

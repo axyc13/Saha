@@ -38,7 +38,7 @@ export default function Hero({ textStyle }: { textStyle?: MotionStyle }) {
             <button>Contact Us</button>
           </Link>
           <Link href="/services" className="flex lg:hidden">
-            <button>Chapters</button>
+            <button>Services</button>
           </Link>
         </div>
       </motion.div>

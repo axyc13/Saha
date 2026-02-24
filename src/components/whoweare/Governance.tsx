@@ -11,13 +11,13 @@ export default function Governance() {
         {/* Content */}
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
           {/* Text */}
-          <div className="flex flex-col gap-8 text-left text-sm lg:text-base leading-relaxed">
+          <div className="flex flex-col gap-8 text-left text-sm lg:text-base xl:text-xl leading-relaxed">
             <p>
               Governance at Saha isn&apos;t just a framework, is a mindset. Our
               core belief, Sky&apos;s the limit, guides how we operate, how we
               serve clients, and how we hold ourselves accountable.
             </p>
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start text-[10px] md:text-lg xl:text-xl">
               <Link href="/whoweare/governance">
                 <button>Learn More</button>
               </Link>
