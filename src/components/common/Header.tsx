@@ -47,7 +47,7 @@ export default function Header() {
   }, [desktopOpen]);
 
   return (
-    <header className="relative text-white bg-black">
+    <header className="relative text-[#F2F2F2] bg-[#1E2A38]">
       <div
         className="px-8 py-4 flex justify-center items-center gap-8 md:gap-16"
         ref={headerRef}

@@ -17,7 +17,7 @@ export default function Hero({ textStyle }: { textStyle?: MotionStyle }) {
         alt="hero image"
         fill
         priority
-        className="object-cover object-left lg:object-top z-0 opacity-80"
+        className="object-cover object-center lg:object-top z-0 opacity-80"
       />
 
       {/* Text content */}

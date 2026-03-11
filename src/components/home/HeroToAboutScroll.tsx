@@ -37,7 +37,7 @@ export default function HeroToAboutScroll() {
         {/* Dark overlay */}
         <motion.div
           style={{ opacity: overlayOpacity }}
-          className="pointer-events-none absolute inset-0 bg-black"
+          className="pointer-events-none absolute inset-0 bg-[#1E2A38]"
         />
       </div>
 
