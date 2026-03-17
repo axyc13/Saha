@@ -26,7 +26,9 @@ export default function Services() {
             </p>
             <div className="flex justify-center lg:justify-start text-[10px] md:text-lg xl:text-xl">
               <Link href="/services">
-                <button>Learn More</button>
+              <button className="text-[10px] md:text-lg xl:text-xl bg-[#F2F2F2] !text-[#1E2A38] !border-[#1E2A38] hover:!bg-[#1E2A38] hover:!text-[#F2F2F2] hover:!border-[#1E2A38]">
+                  Learn More
+                </button>
               </Link>
             </div>
           </div>

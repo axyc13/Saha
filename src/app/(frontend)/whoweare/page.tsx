@@ -1,5 +1,4 @@
 import Header from "@/src/components/common/Header";
-import Footer from "@/src/components/common/Footer";
 import Hero from "@/src/components/whoweare/Hero";
 import Governance from "@/src/components/whoweare/Governance";
 import OurPeople from "@/src/components/whoweare/OurPeople";
@@ -12,9 +11,8 @@ export default async function WhoWeArePage() {
       <Header />
       <Hero />
       <Governance />
-      <OurValues />
       <OurPeople />
-      <Footer />
+      <OurValues />
     </div>
   );
 }

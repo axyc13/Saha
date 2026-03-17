@@ -8,7 +8,7 @@ type Props = {
 
 export default function ServicesExtended({ onBack, onLinkClick }: Props) {
   return (
-    <div className="text-white bg-black h-auto lg:py-8">
+    <div className="text-white bg-[#1E2A38] h-auto lg:py-8">
       <div className="hidden md:flex flex-row px-16 py-4">
         <div className="border-r-2 pr-16">
           <h2 className="text-2xl pb-8">Services</h2>

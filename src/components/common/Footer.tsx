@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "@/public/logo.png";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/public/logo.png";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
   Facebook02Icon,
@@ -12,117 +12,104 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="relative w-screen h-auto text-white bg-black flex flex-col justify-around py-8 lg:p-8">
-      <div className="flex flex-row md:gap-16 lg:gap-32 justify-center md:justify-normal items-center">
-        <div>
-          <Image
-            src={logo}
-            alt="Saha logo"
-            className="hidden md:flex rounded-full md:w-60 lg:w-80 md:h-60 lg:h-80"
-          />
-        </div>
-
-        <div className="flex flex-row gap-16">
-          <div>
-            <h2 className="text-xl lg:text-3xl pb-8">Quick Links</h2>
-            <div className="flex flex-col gap-5 text-sm md:text-md lg:text-[17px]">
-              <Link href="/whoweare">About Saha</Link>
-              <Link href="/whoweare/#values">Our Values</Link>
-              <Link href="/whoweare/people">Our People</Link>
-              <Link href="/services">What We Do</Link>
-            </div>
+    <footer className="w-screen bg-[#1E2A38] text-[#f2f2f2] border-t border-[#324355]">
+      <div className="w-full px-8 py-5 md:py-6">
+        {/* Top Footer Row */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-6">
+          <div className="shrink-0 flex items-center gap-2">
+            <Image
+              src={logo}
+              alt="Saha logo"
+              className="w-7 h-7 rounded-full object-cover"
+            />
+            <Link href="/" className="text-xl leading-none">
+              Saha
+            </Link>
           </div>
 
-          <div>
-            <h2 className="text-xl lg:text-3xl pb-8">Get Involved</h2>
-            <div className="flex flex-col gap-5 text-sm md:text-md lg:text-[17px]">
-              <Link href="/contactus">Contact Us</Link>
-              <Link href="/careers">Careers</Link>
-            </div>
-            <div className="md:hidden grid grid-cols-2 gap-y-3 py-6">
-              <HugeiconsIcon icon={Linkedin02Icon} className="w-6 h-6 " />
-              <HugeiconsIcon icon={Facebook02Icon} className="w-6 h-6" />
-              <HugeiconsIcon icon={NewTwitterIcon} className="w-6 h-6" />
-              <HugeiconsIcon icon={InstagramIcon} className="w-6 h-6" />
-            </div>
+          <nav
+            className="flex-1 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm md:text-[13px] text-[#d8dee5]"
+            aria-label="Footer navigation"
+          >
+            <Link href="/whoweare" className="hover:text-white transition-colors">
+              About
+            </Link>
+            {/* <Link href="/whoweare/#values" className="hover:text-white transition-colors">
+              Our Values
+            </Link>
+            <Link href="/whoweare/people" className="hover:text-white transition-colors">
+              Our People
+            </Link>
+            <Link href="/services" className="hover:text-white transition-colors">
+              What We Do
+            </Link> */}
+            <Link href="/contactus" className="hover:text-white transition-colors">
+              Contact Us
+            </Link>
+            <Link href="/careers" className="hover:text-white transition-colors">
+              Careers
+            </Link>
+          </nav>
+
+          <div className="flex items-center gap-3 text-[#d8dee5] md:justify-end">
+            <Link
+              href="/facebook"
+              target="_blank"
+              aria-label="Visit Saha on Facebook"
+              className="hover:text-white transition-colors"
+            >
+              <HugeiconsIcon icon={Facebook02Icon} className="w-[15px] h-[15px]" />
+            </Link>
+            <Link
+              href="/x"
+              target="_blank"
+              aria-label="Visit Saha on X"
+              className="hover:text-white transition-colors"
+            >
+              <HugeiconsIcon icon={NewTwitterIcon} className="w-[15px] h-[15px]" />
+            </Link>
+            <Link
+              href="/instagram"
+              target="_blank"
+              aria-label="Visit Saha on Instagram"
+              className="hover:text-white transition-colors"
+            >
+              <HugeiconsIcon icon={InstagramIcon} className="w-[15px] h-[15px]" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/sahaca/posts/"
+              target="_blank"
+              aria-label="Visit Saha on LinkedIn"
+              className="hover:text-white transition-colors"
+            >
+              <HugeiconsIcon icon={Linkedin02Icon} className="w-[15px] h-[15px]" />
+            </Link>
           </div>
         </div>
-      </div>
 
-      <div className="hidden md:flex flex-row gap-5 absolute sm:right-22 right-16 bottom-24">
-        <Link
-          href="https://www.linkedin.com/company/sahaca/posts/"
-          target="_blank"
-        >
-          <HugeiconsIcon
-            icon={Linkedin02Icon}
-            className="w-6 md:w-8 h-6 md:h-8"
-          />
-        </Link>
-
-        <Link href="/facebook" target="_blank">
-          <HugeiconsIcon
-            icon={Facebook02Icon}
-            className="w-6 md:w-8 h-6 md:h-8"
-          />
-        </Link>
-
-        <Link href="/x" target="_blank">
-          <HugeiconsIcon
-            icon={NewTwitterIcon}
-            className="w-6 md:w-8 h-6 md:h-8"
-          />
-        </Link>
-
-        <Link href="/instagram" target="_blank">
-          <HugeiconsIcon
-            icon={InstagramIcon}
-            className="w-6 md:w-8 h-6 md:h-8"
-          />
-        </Link>
-      </div>
-
-      {/* Bottom Line */}
-      <div className="w-full lg:grid grid-cols-3 px-8 lg:px-0 flex flex-col gap-8 justify-center text-center">
-        <div className="hidden md:flex" />
-        <div className="hidden md:flex flex-col justify-center gap-2">
-          <p className="text-[9px] lg:text-sm">
-            © 2025 Saha. All Rights Reserved.
-          </p>
-          <p className="text-[8px] lg:text-xs">
-            Designed by {""}
-            <Link target="_blank" href="https://www.andrewxychen.com">
-              Andrew Chen
+        {/* Bottom Footer Row */}
+        <div className="mt-4 pt-3 border-t border-[#324355] flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-xs md:text-[12px] text-[#c2cbd4]">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+            <p>© 2025 Saha. All rights reserved.</p>
+            <p>
+              Designed by{" "}
+              <Link
+                target="_blank"
+                href="https://www.andrewxychen.com"
+                className="hover:text-white transition-colors"
+              >
+                Andrew Chen
+              </Link>
+            </p>
+          </div>
+          <div className="flex items-center gap-4 flex-wrap">
+            <Link href="/privacy" target="_blank" className="hover:text-white transition-colors">
+              Privacy
             </Link>
-          </p>
-        </div>
-        <div className="flex justify-center lg:justify-end gap-4 lg:gap-8 pr-4 lg:pr-16">
-          <Link
-            href="/termsofuse"
-            className="text-[9px] lg:text-sm"
-            target="_blank"
-          >
-            Terms of Use
-          </Link>
-          <Link
-            href="/privacy"
-            className="text-[9px] lg:text-sm"
-            target="_blank"
-          >
-            Privacy
-          </Link>
-        </div>
-        {/* Mobile Design Move */}
-        <div className="flex md:hidden flex-col justify-center gap-2">
-          <p className="text-[9px] lg:text-sm">
-            © 2025 Saha. All Rights Reserved.
-          </p>
-          <p className="text-[8px] lg:text-xs">
-            Designed by {""}
-            <Link target="_blank" href="https://www.andrewxychen.com">
-              Andrew Chen
+            <Link href="/termsofuse" target="_blank" className="hover:text-white transition-colors">
+              Terms of Use
             </Link>
-          </p>
+          </div>
         </div>
       </div>
     </footer>

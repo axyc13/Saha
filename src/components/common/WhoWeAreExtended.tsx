@@ -7,7 +7,7 @@ type Props = {
 
 export default function WhoWeAreExtended({ onBack, onLinkClick }: Props) {
   return (
-    <div className=" text-white bg-black h-auto lg:py-8">
+    <div className=" text-white bg-[#1E2A38] h-auto lg:py-8">
       {/*Desktop*/}
       <div className="hidden md:flex flex-row px-16 py-4">
         <div className="border-r-2 pr-16">
@@ -23,13 +23,13 @@ export default function WhoWeAreExtended({ onBack, onLinkClick }: Props) {
           </Link>
         </div>
         <div className="flex flex-col flex-1 pl-16 justify-center">
-          <Link
+          {/* <Link
             href="/whoweare"
             className="border-b p-4 hover:bg-white hover:text-black"
             onClick={onLinkClick}
           >
             <h2 className="text-xl">Overview</h2>
-          </Link>
+          </Link> */}
           <Link
             href="/whoweare/governance"
             className="border-b p-4 hover:bg-white hover:text-black"
@@ -38,7 +38,7 @@ export default function WhoWeAreExtended({ onBack, onLinkClick }: Props) {
             <h2 className="text-xl">Governance</h2>
           </Link>
           <Link
-            href="/whoweare/#values"
+            href="/whoweare/values"
             className="border-b p-4 hover:bg-white hover:text-black"
             onClick={onLinkClick}
           >
@@ -83,7 +83,7 @@ export default function WhoWeAreExtended({ onBack, onLinkClick }: Props) {
             <h2 className="text-lg md:text-xl">Governance</h2>
           </Link>
           <Link
-            href="/whoweare/#values"
+            href="/whoweare/values"
             className="border-b p-4 hover:bg-white hover:text-black"
             onClick={onLinkClick}
           >

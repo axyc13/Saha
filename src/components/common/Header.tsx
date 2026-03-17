@@ -171,7 +171,7 @@ export default function Header() {
 
       {/* Mobile Nav Menu */}
       {mobileOpen && mobilePage === "menu" && (
-        <div className="md:hidden absolute left-0 top-full w-screen h-screen bg-black text-white px-8 py-4 gap-8 flex flex-col z-50">
+        <div className="md:hidden absolute left-0 top-full w-screen h-screen bg-[#1E2A38] text-white px-8 py-4 gap-8 flex flex-col z-50">
           <div
             onClick={() => toggleOpen("whoweare")}
             className="flex flex-row items-center cursor-pointer"

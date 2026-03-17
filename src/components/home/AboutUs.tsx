@@ -26,17 +26,17 @@ export default function AboutUs() {
                 md:flex md:[&>*:first-child]:col-span-1"
             >
               <Link href="/whoweare/governance" className="w-fit">
-                <button className="text-[10px] md:text-lg xl:text-xl w-fit">
+                <button className="text-[10px] md:text-lg xl:text-xl w-fit bg-[#F2F2F2] !text-[#1E2A38] !border-[#1E2A38] hover:!bg-[#1E2A38] hover:!text-[#F2F2F2] hover:!border-[#1E2A38]">
                   Governance
                 </button>
               </Link>
               <Link href="/whoweare/#values">
-                <button className="text-[10px] md:text-lg xl:text-xl">
+                <button className="text-[10px] md:text-lg xl:text-xl bg-[#F2F2F2] !text-[#1E2A38] !border-[#1E2A38] hover:!bg-[#1E2A38] hover:!text-[#F2F2F2] hover:!border-[#1E2A38]">
                   Our Values
                 </button>
               </Link>
               <Link href="/whoweare/people">
-                <button className="text-[10px] md:text-lg xl:text-xl">
+                <button className="text-[10px] md:text-lg xl:text-xl bg-[#F2F2F2] !text-[#1E2A38] !border-[#1E2A38] hover:!bg-[#1E2A38] hover:!text-[#F2F2F2] hover:!border-[#1E2A38]">
                   Our People
                 </button>
               </Link>
