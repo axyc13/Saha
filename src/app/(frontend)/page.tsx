@@ -1,6 +1,7 @@
 "use client";
 import "./globals.css";
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function HomePage() {
   useEffect(() => {
@@ -85,18 +86,30 @@ export default function HomePage() {
 
       {/* NAVIGATION */}
       <nav>
-        <span className="nav-logo">saha.</span>
+        <Link href="/" className="nav-logo">
+          saha.
+        </Link>
         <div className="nav-center">
-          <button className="nav-link active">Home</button>
-          <button className="nav-link">Who We Are</button>
-          <button className="nav-link">Services</button>
-          <button className="nav-link">Careers</button>
+          <Link href="/" className="nav-link active">
+            Home
+          </Link>
+          <Link href="/whoweare" className="nav-link">
+            Who We Are
+          </Link>
+          <Link href="/services" className="nav-link">
+            Services
+          </Link>
+          <Link href="/careers" className="nav-link">
+            Careers
+          </Link>
         </div>
         <div className="nav-right">
           <button className="nav-back-btn" style={{ display: "none" }}>
             ← Back
           </button>
-          <button className="nav-work-btn">Work with us</button>
+          <Link href="/contactus" className="nav-work-btn">
+            Work with us
+          </Link>
         </div>
       </nav>
 

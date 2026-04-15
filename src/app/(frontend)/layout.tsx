@@ -25,16 +25,25 @@ export const metadata = {
   title: "saha.",
 };
 
-export default async function RootLayout(props: { children: React.ReactNode }) {
-  const { children } = props;
-
+export default async function RootLayout() {
   return (
     <html
       lang="en"
       className={`${playfairDisplay.variable} ${instrumentSerif.variable} ${dmMono.variable}`}
     >
-      <body>
-        <main>{children}</main>
+      <body style={{ margin: 0, padding: 0 }}>
+        <main style={{ width: "100vw", height: "100vh" }}>
+          <iframe
+            src="/saha-combined-final.html"
+            title="Saha Combined Final"
+            style={{
+              width: "100%",
+              height: "100%",
+              border: "none",
+              display: "block",
+            }}
+          />
+        </main>
       </body>
     </html>
   );

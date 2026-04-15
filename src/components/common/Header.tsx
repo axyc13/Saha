@@ -2,11 +2,15 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { CONTACT_MAILTO } from "@/src/lib/site";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
+  const pathname = usePathname();
+
+  const navClass = (href: string) =>
+    `site-nav__link${pathname === href ? " active" : ""}`;
 
   useEffect(() => {
     function handleEscape(e: KeyboardEvent) {
@@ -30,23 +34,23 @@ export default function Header() {
       </Link>
 
       <nav className="site-nav__center hidden md:flex" aria-label="Primary">
-        <Link href="/whoweare" className="site-nav__link">
+        <Link href="/" className={navClass("/")}>
+          Home
+        </Link>
+        <Link href="/whoweare" className={navClass("/whoweare")}>
           Who We Are
         </Link>
-        <Link href="/services" className="site-nav__link">
+        <Link href="/services" className={navClass("/services")}>
           Services
         </Link>
-        <Link href={CONTACT_MAILTO} className="site-nav__link">
-          Contact Us
-        </Link>
-        <Link href="/careers" className="site-nav__link active">
-          Work With Us
+        <Link href="/careers" className={navClass("/careers")}>
+          Careers
         </Link>
       </nav>
 
       <div className="hidden md:flex items-center gap-3">
-        <Link href="/careers" className="site-nav__cta">
-          Work With Us
+        <Link href="/contactus" className="site-nav__cta">
+          Work with us
         </Link>
       </div>
 
@@ -63,32 +67,39 @@ export default function Header() {
       {mobileOpen && (
         <div className="md:hidden absolute left-0 top-full w-full bg-[rgba(10,22,40,0.98)] border-t border-white/10 px-6 py-8 flex flex-col gap-4">
           <Link
+            href="/"
+            className={navClass("/")}
+            onClick={() => setMobileOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
             href="/whoweare"
-            className="site-nav__link"
+            className={navClass("/whoweare")}
             onClick={() => setMobileOpen(false)}
           >
             Who We Are
           </Link>
           <Link
             href="/services"
-            className="site-nav__link"
+            className={navClass("/services")}
             onClick={() => setMobileOpen(false)}
           >
             Services
           </Link>
           <Link
-            href={CONTACT_MAILTO}
-            className="site-nav__link"
+            href="/careers"
+            className={navClass("/careers")}
             onClick={() => setMobileOpen(false)}
           >
-            Contact Us
+            Careers
           </Link>
           <Link
-            href="/careers"
+            href="/contactus"
             className="site-nav__link"
             onClick={() => setMobileOpen(false)}
           >
-            Work With Us
+            Work with us
           </Link>
         </div>
       )}
