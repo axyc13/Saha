@@ -1,33 +1,38 @@
 import React from "react";
+import Link from "next/link";
+import { CONTACT_MAILTO } from "@/src/lib/site";
 
 export default function Hero() {
   return (
-    <section className="w-screen h-[40vh] bg-black text-white flex flex-col md:flex-row items-center gap-8 px-8 lg:px-32 justify-center lg:justify-between">
-      <div className="flex flex-col gap-8">
-        <h1 className="text-4xl lg:text-6xl">Contact Us</h1>
-        <p className="text-sm lg:text-base break-normal w-[80vw]">
-          Whether it&apos;s business-related inquiries or if you&apos;re curious
-          about Saha, our team of experts are more than happy to connect with
-          you.
-        </p>
+    <section className="panel-dark relative overflow-hidden px-6 py-28 md:px-10 lg:px-16">
+      <div className="absolute inset-0 grid-muted pointer-events-none" />
+      <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-end">
+        <div>
+          <p className="section-eyebrow--light">Contact</p>
+          <h1 className="section-title section-title--light text-[clamp(3rem,5vw,5rem)]">
+            Contact <em>Us</em>
+          </h1>
+          <p className="mt-6 max-w-2xl text-body text-body--light text-base md:text-lg">
+            Whether it&apos;s business-related inquiries or if you&apos;re
+            curious about Saha, our team is happy to connect with you.
+          </p>
+        </div>
+
+        <div className="rounded-[1.25rem] border border-white/8 bg-white/5 p-6 backdrop-blur-sm">
+          <p className="mb-3 text-xs uppercase tracking-[0.25em] text-white/30">
+            Direct Email
+          </p>
+          <Link
+            href={CONTACT_MAILTO}
+            className="break-all text-2xl font-black text-white"
+          >
+            business@saha.co.nz
+          </Link>
+          <p className="mt-4 text-sm leading-7 text-white/40">
+            Use this address for general enquiries, proposals, and follow-up.
+          </p>
+        </div>
       </div>
     </section>
-    // <section className="w-screen h-[80vh] text-black flex flex-col gap-8">
-    //   <div>
-    //     <Image
-    //       src={placeholder}
-    //       alt="Placeholder"
-    //       className="w-screen h-[56vh] object-cover"
-    //     />
-    //   </div>
-    //   <div className="flex flex-col gap-8 justify-center lg:justify-normal px-8 lg:px-16">
-    //     <h1 className="text-4xl lg:text-6xl">Contact Us</h1>
-    //     <p className="text-sm lg:text-base break-normal w-[80vw]">
-    //       Whether it&apos;s business-related inquiries or if you&apos;re curious
-    //       about Saha, our team of experts are more than happy to connect with
-    //       you.
-    //     </p>
-    //   </div>
-    // </section>
   );
 }

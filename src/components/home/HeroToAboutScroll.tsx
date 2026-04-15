@@ -20,13 +20,12 @@ export default function HeroToAboutScroll() {
   const heroTextY = useTransform(
     scrollYProgress,
     [0.05, 0.25],
-    ["0vh", "-6vh"]
+    ["0vh", "-6vh"],
   );
 
   return (
-    <section ref={ref} className="relative h-[172vh]">
-      {/* Sticky Hero */}
-      <div className="sticky top-0 h-screen">
+    <section ref={ref} className="relative h-[170vh] panel-dark">
+      <div className="sticky top-0 h-screen overflow-hidden">
         <Hero
           textStyle={{
             opacity: heroTextOpacity,
@@ -34,14 +33,12 @@ export default function HeroToAboutScroll() {
           }}
         />
 
-        {/* Dark overlay */}
         <motion.div
           style={{ opacity: overlayOpacity }}
-          className="pointer-events-none absolute inset-0 bg-black"
+          className="pointer-events-none absolute inset-0 panel-dark"
         />
       </div>
 
-      {/* AboutUs reveal */}
       <motion.div className="relative z-10">
         <AboutUs />
       </motion.div>
