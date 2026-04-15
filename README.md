@@ -17,4 +17,5 @@
 </ul>
 
 # Developers:
-[Andrew Chen](https://github.com/axyc13)
+1st Design:[Andrew Chen](https://github.com/axyc13)
+Current Design: [Kaiden Ziegler](https://github.com/dxv5648)
