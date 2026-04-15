@@ -2,7 +2,6 @@ import React from "react";
 import { Ulux } from "@/src/types/ulux";
 import Link from "next/link";
 import { RichText } from "@payloadcms/richtext-lexical/react";
-import Image from "next/image";
 
 interface UluxProp {
   ulux: Ulux;

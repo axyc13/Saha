@@ -3,42 +3,63 @@ import Link from "next/link";
 
 export default function Services() {
   return (
-    <section className="relative w-full h-[72vh] text-black flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16 mx-auto bg-gray-100">
-      {/* Header */}
-      <div className="flex flex-col lg:flex-row justify-center items-center w-[80vw] lg:w-[88vw] gap-8 lg:gap-16">
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl">What Does Saha Do?</h1>
-        {/* Content */}
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
-          {/* Text */}
-          <div className="flex flex-col gap-8 text-left text-sm lg:text-lg xl:text-xl leading-relaxed">
-            <p>
-              Saha delivers a full-spectrum financial advisory service,
-              combining deep hands-on management with strategic insights. We
-              partner with you to design and run your finance function — from
-              budgeting to cash-flow monitoring to accounting, and more.
+    <section className="site-section panel-dark reveal relative overflow-hidden">
+      <div className="absolute inset-0 grid-muted pointer-events-none" />
+      <div className="relative mx-auto max-w-7xl">
+        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div>
+            <p
+              className="section-eyebrow"
+              style={{ color: "var(--accent-light)" }}
+            >
+              Services
             </p>
-            <p>
-              Beyond the numbers, Saha strengthens your business&apos;s
-              backbone. Whether you&apos;re aiming to raise capital, plan for
-              future growth, or improve profitability, our global reach and
-              industry-tailored expertise, will help you transform, grow, and
-              operate with confidence.
+            <h2 className="section-title section-title--light">
+              What <em>does</em> Saha do?
+            </h2>
+            <p className="mt-6 text-body text-body--light max-w-xl">
+              Saha delivers a full-spectrum advisory service, combining deep
+              hands-on management with strategic insight. We design and run your
+              finance function so you can move with confidence.
             </p>
-            <div className="flex justify-center lg:justify-start text-[10px] md:text-lg xl:text-xl">
-              <Link href="/services">
-                <button>Learn More</button>
-              </Link>
-            </div>
           </div>
 
-          {/* Image
-        <div className="flex justify-center lg:max-w-[48%] w-full">
-          <Image
-            src={placeholder}
-            alt="Placeholder"
-            className="w-100 h-60 md:w-150 md:h-80 lg:w-full lg:h-auto object-cover"
-          />
-        </div> */}
+          <div className="grid gap-4 md:grid-cols-3">
+            <article className="rounded-[1.25rem] border border-white/8 bg-white/5 p-6 transition-colors hover:bg-blue-500/10">
+              <p className="text-2xl mb-5">01</p>
+              <h3 className="mb-2 text-xl font-semibold text-white">Finance</h3>
+              <p className="text-sm leading-7 text-white/35">
+                Budgeting, reporting, cash-flow and the operational backbone.
+              </p>
+            </article>
+            <article className="rounded-[1.25rem] border border-white/8 bg-white/5 p-6 transition-colors hover:bg-blue-500/10">
+              <p className="text-2xl mb-5">02</p>
+              <h3 className="mb-2 text-xl font-semibold text-white">
+                Strategy
+              </h3>
+              <p className="text-sm leading-7 text-white/35">
+                Structuring growth, capital, and decision-making with clarity.
+              </p>
+            </article>
+            <article className="rounded-[1.25rem] border border-white/8 bg-white/5 p-6 transition-colors hover:bg-blue-500/10">
+              <p className="text-2xl mb-5">03</p>
+              <h3 className="mb-2 text-xl font-semibold text-white">
+                Execution
+              </h3>
+              <p className="text-sm leading-7 text-white/35">
+                Ongoing support that keeps the business moving day to day.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div className="mt-10 flex flex-wrap gap-3">
+          <Link href="/services" className="btn-shared btn-shared--accent">
+            Learn More
+          </Link>
+          <Link href="/contactus" className="btn-shared btn-shared--outline">
+            Contact Us
+          </Link>
         </div>
       </div>
     </section>
