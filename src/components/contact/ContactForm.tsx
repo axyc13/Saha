@@ -33,7 +33,7 @@ export default function ContactForm() {
               <textarea
                 name="message"
                 className="w-full resize-none border-b border-black"
-                placeholder="Your Message*"
+                placeholder="Your Message *"
                 required
               />
             </div>
