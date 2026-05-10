@@ -1,15 +1,22 @@
 import Header from "@/src/components/common/Header";
 import Footer from "@/src/components/common/Footer";
-import Hero from "@/src/components/privacy/Hero";
-import Content from "@/src/components/privacy/Content";
+import LegalDocument from "@/src/components/legal/LegalDocument";
+import { getPolicies } from "@/src/lib/payload/policies";
 import "../globals.css";
 
 export default async function PrivacyPage() {
+  const sections = await getPolicies();
+
   return (
     <div>
       <Header />
-      <Hero />
-      <Content />
+      <LegalDocument
+        alternateHref="/termsofuse"
+        alternateLabel="View the Terms of Use"
+        lastUpdated="17/11/25"
+        sections={sections}
+        title="Privacy Policy"
+      />
       <Footer />
     </div>
   );

@@ -1,13 +1,13 @@
 import Header from "@/src/components/common/Header";
 import Footer from "@/src/components/common/Footer";
-import PeoplePage from "@/src/components/whoweare/PeoplePage";
+import ValuesPage from "@/src/components/whoweare/ValuesPage";
 import "../../globals.css";
 
-export default async function WhoWeArePage() {
+export default async function WhoWeAreValuesPage() {
   return (
     <div>
       <Header />
-      <PeoplePage />
+      <ValuesPage />
       <Footer />
     </div>
   );

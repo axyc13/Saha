@@ -1,51 +1,41 @@
-import React from "react";
 import Link from "next/link";
-import { CONTACT_MAILTO } from "@/src/lib/site";
+
+const footerItems = [
+  { href: "/", label: "Home" },
+  { href: "/whoweare", label: "Who We Are" },
+  { href: "/services", label: "Services" },
+  { href: "/careers", label: "Careers" },
+  { href: "/contactus", label: "Work With Us" },
+];
 
 export default function Footer() {
   return (
-    <footer className="site-footer">
-      <div className="site-footer__top">
-        <Link href="/" className="site-footer__logo">
+    <footer className="site-footer" id="main-footer">
+      <div className="footer-top">
+        <Link className="footer-logo" href="/" id="main-footer-logo">
           saha.
         </Link>
-
-        <div className="site-footer__links">
-          <Link href="/whoweare" className="site-footer__link">
-            Who We Are
-          </Link>
-          <Link href="/services" className="site-footer__link">
-            Services
-          </Link>
-          <Link href={CONTACT_MAILTO} className="site-footer__link">
-            Contact Us
-          </Link>
-          <Link href="/careers" className="site-footer__link">
-            Work With Us
-          </Link>
+        <div className="footer-links-row">
+          {footerItems.map((item) => (
+            <Link className="footer-nav-link" href={item.href} key={item.href}>
+              {item.label}
+            </Link>
+          ))}
         </div>
+        <span className="footer-note">
+          © 2025 Saha NZ Limited — Australasia
+        </span>
       </div>
-
-      <div className="site-footer__bar">
-        <p className="site-footer__note">© 2025 Saha. All Rights Reserved.</p>
-        <p className="site-footer__note">
-          Designed by{" "}
-          <Link href="https://www.andrewxychen.com" target="_blank">
-            Andrew Chen
-          </Link>
+      <div className="footer-disclaimer-bar">
+        <span className="fdb-icon">⚖</span>
+        <p className="fdb-text">
+          <strong>Legal disclaimer&nbsp;&nbsp;</strong>Saha provides AI,
+          personal, and digital consulting services. Nothing on this website
+          constitutes professional legal, financial, or regulated advice of any
+          kind. All information provided is general in nature and for
+          informational purposes only. Clients should seek independent, licensed
+          advice where required.
         </p>
-        <div className="site-footer__links">
-          <Link
-            href="/termsofuse"
-            className="site-footer__link"
-            target="_blank"
-          >
-            Terms of Use
-          </Link>
-          <Link href="/privacy" className="site-footer__link" target="_blank">
-            Privacy
-          </Link>
-        </div>
       </div>
     </footer>
   );

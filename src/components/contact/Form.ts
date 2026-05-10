@@ -13,13 +13,66 @@ oAuth2Client.setCredentials({
   refresh_token: process.env.GMAIL_REFRESH_TOKEN,
 });
 
+function getFieldValue(formData: FormData, keys: string[]) {
+  for (const key of keys) {
+    const value = formData.get(key)?.toString().trim();
+    if (value) {
+      return value;
+    }
+  }
+
+  return "";
+}
+
+function escapeHtml(value: string) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
 export async function sendFormEmail(formData: FormData) {
-  const topic = formData.get("topic")?.toString() || "No topic";
-  const first = formData.get("firstName")?.toString() || "No first name";
-  const last = formData.get("lastName")?.toString() || "No last name";
-  const email = formData.get("email")?.toString() || "No email";
-  const phone = formData.get("phone")?.toString() || "No phone";
-  const message = formData.get("message")?.toString() || "No message";
+  const topic = getFieldValue(formData, ["topic"]) || "General enquiry";
+  const first =
+    getFieldValue(formData, ["firstName", "first_name"]) || "No first name";
+  const last =
+    getFieldValue(formData, ["lastName", "last_name"]) || "No last name";
+  const email = getFieldValue(formData, ["email"]) || "No email";
+  const phone = getFieldValue(formData, ["phone"]) || "No phone";
+  const message = getFieldValue(formData, ["message"]) || "No message";
+  const company = getFieldValue(formData, ["company"]);
+  const role = getFieldValue(formData, ["role"]);
+  const source = getFieldValue(formData, ["source"]);
+  const timeline = getFieldValue(formData, ["timeline"]);
+  const budget = getFieldValue(formData, ["budget"]);
+  const services = formData
+    .getAll("services")
+    .map((value) => value.toString().trim())
+    .filter(Boolean);
+
+  const isWorkWithUs = Boolean(company);
+  const subject = isWorkWithUs
+    ? `[Work With Us] New Enquiry: ${company}`
+    : `[Contact Form] New Query: ${topic}`;
+  const footerLabel = isWorkWithUs ? "work with us" : "contact";
+  const detailRows = isWorkWithUs
+    ? [
+        `<p><strong>Company:</strong> ${escapeHtml(company)}</p>`,
+        role ? `<p><strong>Role:</strong> ${escapeHtml(role)}</p>` : "",
+        source ? `<p><strong>Source:</strong> ${escapeHtml(source)}</p>` : "",
+        timeline
+          ? `<p><strong>Timeline:</strong> ${escapeHtml(timeline)}</p>`
+          : "",
+        budget
+          ? `<p><strong>Budget:</strong> NZD ${escapeHtml(budget)} / month</p>`
+          : "",
+        services.length
+          ? `<p><strong>Services:</strong> ${escapeHtml(services.join(", "))}</p>`
+          : "",
+      ].join("")
+    : `<p><strong>Topic:</strong> ${escapeHtml(topic)}</p>`;
 
   try {
     const accessTokenResponse = await oAuth2Client.getAccessToken();
@@ -44,18 +97,18 @@ export async function sendFormEmail(formData: FormData) {
       from: `"Saha Contact Form" <${process.env.GMAIL_USER}>`,
       to: process.env.GMAIL_USER,
       replyTo: email,
-      subject: `[Contact Form] New Query: ${topic}`,
+      subject,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px;">
           <h2>New form submission</h2>
-          <p><strong>Topic:</strong> ${topic}</p>
-          <p><strong>Name:</strong> ${first} ${last}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Phone:</strong> ${phone}</p>
+          ${detailRows}
+          <p><strong>Name:</strong> ${escapeHtml(first)} ${escapeHtml(last)}</p>
+          <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+          <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
           <h3>Message:</h3>
-          <p style="white-space: pre-wrap;">${message}</p>
+          <p style="white-space: pre-wrap;">${escapeHtml(message)}</p>
           <hr />
-          <footer style="font-size: 12px; color: #666;">Sent from saha.co.nz contact form</footer>
+          <footer style="font-size: 12px; color: #666;">Sent from saha.co.nz ${footerLabel} form</footer>
         </div>
       `,
     });

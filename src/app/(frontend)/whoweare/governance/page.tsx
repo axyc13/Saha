@@ -1,19 +1,13 @@
 import Header from "@/src/components/common/Header";
 import Footer from "@/src/components/common/Footer";
-import Hero from "@/src/components/governance/Hero";
-import Second from "@/src/components/governance/Second";
-import Structures from "@/src/components/governance/Structures";
-import Final from "@/src/components/governance/Final";
+import GovernancePage from "@/src/components/whoweare/GovernancePage";
 import "../../globals.css";
 
 export default async function WhoWeArePage() {
   return (
     <div>
       <Header />
-      <Hero />
-      <Second />
-      <Structures />
-      <Final />
+      <GovernancePage />
       <Footer />
     </div>
   );

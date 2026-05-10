@@ -2,6 +2,10 @@ import React from "react";
 
 import { DM_Mono, Instrument_Serif, Playfair_Display } from "next/font/google";
 
+import FrontendCursor from "@/src/components/common/FrontendCursor";
+
+import "./globals.css";
+
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-display",
@@ -25,25 +29,21 @@ export const metadata = {
   title: "saha.",
 };
 
-export default async function RootLayout() {
+type RootLayoutProps = {
+  children: React.ReactNode;
+};
+
+export default async function RootLayout({ children }: RootLayoutProps) {
+  void children;
+
   return (
     <html
       lang="en"
       className={`${playfairDisplay.variable} ${instrumentSerif.variable} ${dmMono.variable}`}
     >
       <body style={{ margin: 0, padding: 0 }}>
-        <main style={{ width: "100vw", height: "100vh" }}>
-          <iframe
-            src="/saha-combined-final.html"
-            title="Saha Combined Final"
-            style={{
-              width: "100%",
-              height: "100%",
-              border: "none",
-              display: "block",
-            }}
-          />
-        </main>
+        <FrontendCursor />
+        <main style={{ width: "100vw", height: "100vh" }}>{children}</main>
       </body>
     </html>
   );
