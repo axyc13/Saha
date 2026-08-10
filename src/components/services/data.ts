@@ -38,8 +38,8 @@ export const servicesLandingTiles = [
 export const servicesLandingStats = [
   {
     label:
-      "Service disciplines under one roof — AI, personal & digital consulting",
-    value: "3",
+      "Service disciplines under one roof — AI, personal & digital consulting, plus Kali Foundation",
+    value: "4",
   },
   {
     label:
@@ -49,11 +49,6 @@ export const servicesLandingStats = [
   {
     label: "Based in Auckland, serving clients across Australasia and beyond",
     value: "NZ",
-  },
-  {
-    label:
-      "Service disciplines under one roof — AI, personal & digital consulting, plus Kali Foundation",
-    value: "4",
   },
 ];
 
