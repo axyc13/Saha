@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "pnpm exec opennextjs-cloudflare build",
-    "deploy": "pnpm exec opennextjs-cloudflare deploy",
-    "type-check": "tsc --noEmit",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
@@ -22,7 +20,7 @@
     "framer-motion": "^12.23.26",
     "googleapis": "^169.0.0",
     "graphql": "^16.12.0",
-    "next": "16.2.5",
+    "next": "16.1.0-canary.30",
     "nodemailer": "^7.0.12",
     "payload": "3.68.5",
     "react": "19.2.3",
@@ -32,16 +30,14 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "^1.19.8",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^20.19.25",
     "@types/nodemailer": "^7.0.4",
     "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.1",
-    "eslint-config-next": "16.2.5",
+    "eslint-config-next": "16.0.3",
     "tailwindcss": "^4.1.17",
-    "typescript": "^5.9.3",
-    "wrangler": "^4.90.0"
+    "typescript": "^5.9.3"
   }
 }
