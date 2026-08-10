@@ -1,0 +1,324 @@
+/* Kali Foundation — a cream-and-green island inside Saha's dark theme.
+   Everything is scoped to .kali-page so nothing leaks into the rest of the site. */
+
+.kali-page {
+  --k-cream: #f8f4ea;
+  --k-cream-deep: #f1e8d6;
+  --k-white: #ffffff;
+  --k-ink: #212e32;
+  --k-ink-soft: #52616b;
+  --k-border: rgba(33, 46, 50, 0.12);
+  --k-sage-700: #3e5836;
+  --k-sage-600: #4c6b41;
+  --k-sage-500: #5c7a4e;
+  --k-sage-400: #7c9a6c;
+  --k-sage-100: #e4ebdd;
+  --k-sage-50: #eff3ea;
+  --k-clay-400: #b98e5e;
+  --k-clay-100: #ecdcc6;
+  --k-shadow-sm:
+    0 1px 2px rgba(33, 46, 50, 0.04), 0 2px 8px rgba(33, 46, 50, 0.05);
+  --k-shadow-md:
+    0 4px 12px rgba(33, 46, 50, 0.06), 0 12px 32px rgba(33, 46, 50, 0.07);
+
+  background: var(--k-cream);
+  color: var(--k-ink);
+  font-family: var(--kali-body), system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.68;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 1px; /* contain child margins */
+}
+
+.kali-page ::selection {
+  background: var(--k-sage-100);
+}
+
+.kali-wrap {
+  max-width: 1140px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2rem);
+}
+
+/* ---------- Hero ---------- */
+.kali-hero {
+  padding-block: clamp(3.5rem, 3rem + 5vw, 6rem) clamp(2.5rem, 2rem + 3vw, 4rem);
+  background: linear-gradient(
+    168deg,
+    var(--k-cream) 0%,
+    var(--k-cream-deep) 100%
+  );
+  border-bottom: 1px solid var(--k-border);
+}
+.kali-hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+.kali-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 650;
+  font-size: 0.78rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--k-sage-600);
+  margin: 0 0 1.1rem;
+}
+.kali-eyebrow::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: var(--k-clay-400);
+  border-radius: 2px;
+}
+.kali-lockup {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1.6rem;
+}
+.kali-lockup svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  flex: none;
+}
+.kali-lockup__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.kali-lockup__name {
+  font-family: var(--kali-display), Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  color: var(--k-ink);
+}
+.kali-lockup__sub {
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: var(--k-sage-600);
+  margin-top: 0.36em;
+}
+.kali-page h1 {
+  font-family: var(--kali-display), Georgia, serif;
+  font-weight: 440;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  font-size: clamp(2.1rem, 1.4rem + 2.9vw, 3.3rem);
+  color: var(--k-ink);
+  margin: 0 0 0.5em;
+  max-width: 18ch;
+}
+.kali-page h1 em {
+  font-style: normal;
+  color: var(--k-sage-600);
+}
+.kali-lede {
+  font-size: clamp(1.05rem, 1rem + 0.4vw, 1.24rem);
+  color: var(--k-ink-soft);
+  line-height: 1.55;
+  max-width: 48ch;
+  margin: 0;
+}
+
+/* Hero highlight list */
+.kali-highlights {
+  display: grid;
+  gap: 0.9rem;
+}
+.kali-highlight {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+  background: var(--k-white);
+  border: 1px solid var(--k-border);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--k-shadow-sm);
+}
+.kali-highlight__icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: var(--k-sage-50);
+  border: 1px solid var(--k-sage-100);
+  font-size: 1.15rem;
+}
+.kali-highlight strong {
+  display: block;
+  color: var(--k-ink);
+  font-weight: 650;
+  margin-bottom: 0.15em;
+}
+.kali-highlight span {
+  color: var(--k-ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ---------- Body ---------- */
+.kali-section {
+  padding-block: clamp(3rem, 2.5rem + 4vw, 5rem);
+}
+.kali-section--sage {
+  background: var(--k-sage-50);
+  border-block: 1px solid var(--k-border);
+}
+.kali-page h2 {
+  font-family: var(--kali-display), Georgia, serif;
+  font-weight: 460;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  font-size: clamp(1.65rem, 1.3rem + 1.5vw, 2.3rem);
+  color: var(--k-ink);
+  margin: 0 0 0.5em;
+  max-width: 22ch;
+}
+.kali-page h2 em {
+  font-style: normal;
+  color: var(--k-sage-600);
+}
+.kali-intro p {
+  color: var(--k-ink-soft);
+  max-width: 62ch;
+  margin: 0;
+}
+
+/* 2 x 2 card grid */
+.kali-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin-top: 2.5rem;
+}
+.kali-card {
+  background: var(--k-white);
+  border: 1px solid var(--k-border);
+  border-radius: 16px;
+  padding: clamp(1.4rem, 2.5vw, 2rem);
+  box-shadow: var(--k-shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+.kali-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--k-sage-400);
+}
+.kali-card:nth-child(2)::before,
+.kali-card:nth-child(3)::before {
+  background: var(--k-clay-400);
+}
+.kali-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--k-shadow-md);
+}
+.kali-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: var(--k-sage-50);
+  border: 1px solid var(--k-sage-100);
+  font-size: 1.3rem;
+  margin-bottom: 1.1rem;
+}
+.kali-card h3 {
+  font-size: 1.12rem;
+  font-weight: 650;
+  color: var(--k-ink);
+  margin: 0 0 0.5em;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+.kali-card p {
+  color: var(--k-ink-soft);
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+
+/* ---------- CTA ---------- */
+.kali-cta {
+  background: var(--k-ink);
+  color: var(--k-cream);
+  padding-block: clamp(3rem, 2.5rem + 3vw, 4.5rem);
+}
+.kali-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.kali-cta h2 {
+  color: var(--k-cream);
+  margin-bottom: 0.35em;
+}
+.kali-cta p {
+  color: rgba(248, 244, 234, 0.78);
+  margin: 0;
+  max-width: 46ch;
+}
+.kali-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--k-sage-500);
+  color: var(--k-white);
+  border-radius: 999px;
+  padding: 0.95rem 1.8rem;
+  font-weight: 650;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: var(--k-shadow-sm);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+  white-space: nowrap;
+}
+.kali-btn:hover {
+  background: var(--k-sage-400);
+  color: var(--k-white);
+  transform: translateY(-2px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .kali-hero__grid {
+    grid-template-columns: 1fr;
+  }
+  .kali-grid {
+    grid-template-columns: 1fr;
+  }
+  .kali-page h1 {
+    max-width: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kali-card,
+  .kali-btn {
+    transition: none;
+  }
+  .kali-card:hover,
+  .kali-btn:hover {
+    transform: none;
+  }
+}

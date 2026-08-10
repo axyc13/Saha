@@ -16,11 +16,6 @@ const serviceRows = [
     name: "Digital Consulting",
     tag: "Web · Social Media · SEO · Automation",
   },
-  {
-    href: "/services/kali",
-    name: "Kali Foundation",
-    tag: "Not-for-profits · Charities · Schools · Governance",
-  },
 ];
 
 const introStats = [
