@@ -25,6 +25,14 @@ export const servicesLandingTiles = [
     name: "Digital Consulting",
     number: "03",
   },
+  {
+    description:
+      "Practical, responsible AI for New Zealand charities, schools and community organisations — our not-for-profit arm.",
+    href: "/services/kali",
+    icon: "🌱",
+    name: "Kali Foundation",
+    number: "04",
+  },
 ];
 
 export const servicesLandingStats = [
@@ -41,6 +49,11 @@ export const servicesLandingStats = [
   {
     label: "Based in Auckland, serving clients across Australasia and beyond",
     value: "NZ",
+  },
+  {
+    label:
+      "Service disciplines under one roof — AI, personal & digital consulting, plus Kali Foundation",
+    value: "4",
   },
 ];
 
