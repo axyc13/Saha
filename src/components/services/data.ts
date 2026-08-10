@@ -25,6 +25,14 @@ export const servicesLandingTiles = [
     name: "Digital Consulting",
     number: "03",
   },
+  {
+    description:
+      "Practical, responsible AI for New Zealand charities, schools and community organisations — our not-for-profit arm.",
+    href: "/services/kali",
+    icon: "🌱",
+    name: "Kali Foundation",
+    number: "04",
+  },
 ];
 
 export const servicesLandingStats = [
