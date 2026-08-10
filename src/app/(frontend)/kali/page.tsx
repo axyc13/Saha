@@ -153,7 +153,7 @@ export default function KaliPage() {
               {highlights.map((item) => (
                 <div className="kali-highlight" key={item.title}>
                   <span className="kali-highlight__icon">{item.icon}</span>
-                  <span>
+                  <span className="kali-highlight__body">
                     <strong>{item.title}</strong>
                     <span>{item.description}</span>
                   </span>

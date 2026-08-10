@@ -42,8 +42,9 @@
 }
 
 /* ---------- Hero ---------- */
+/* Top padding clears the 64px fixed site nav at every width. */
 .kali-hero {
-  padding-block: clamp(3.5rem, 3rem + 5vw, 6rem) clamp(2.5rem, 2rem + 3vw, 4rem);
+  padding-block: clamp(6.5rem, 5rem + 5vw, 8rem) clamp(2.5rem, 2rem + 3vw, 4rem);
   background: linear-gradient(
     168deg,
     var(--k-cream) 0%,
@@ -161,7 +162,7 @@
   font-weight: 650;
   margin-bottom: 0.15em;
 }
-.kali-highlight span {
+.kali-highlight__body span {
   color: var(--k-ink-soft);
   font-size: 0.95rem;
   line-height: 1.5;
@@ -281,7 +282,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--k-sage-500);
+  background: var(--k-sage-600);
   color: var(--k-white);
   border-radius: 999px;
   padding: 0.95rem 1.8rem;
@@ -295,7 +296,7 @@
   white-space: nowrap;
 }
 .kali-btn:hover {
-  background: var(--k-sage-400);
+  background: var(--k-sage-700);
   color: var(--k-white);
   transform: translateY(-2px);
 }
