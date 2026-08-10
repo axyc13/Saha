@@ -4,6 +4,7 @@ const footerItems = [
   { href: "/", label: "Home" },
   { href: "/whoweare", label: "Who We Are" },
   { href: "/services", label: "Services" },
+  { href: "/kali", label: "Kali" },
   { href: "/careers", label: "Careers" },
   { href: "/contactus", label: "Work With Us" },
 ];
